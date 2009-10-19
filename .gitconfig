@@ -1,0 +1,13 @@
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+[diff]
+  renames = true
+[user]
+  name = Lin Jen-Shin
+  email = godfat@godfat.org
+[push]
+  default = matching
