@@ -1,5 +1,6 @@
 
 export PATH=\
+~/bin:\
 /opt/local/bin:\
 /opt/local/sbin:\
 /opt/local/apache2/bin:\
