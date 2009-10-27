@@ -38,12 +38,12 @@ function git_aqua_end   {
   echo -e '\033[0m'
 }
 
-function parse_git_dirty {
+function show_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
 }
 
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ $(git_aqua_begin)\1$(git_aqua_end)$(parse_git_dirty)/"
+function show_git_branch {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ $(git_aqua_begin)\1$(git_aqua_end)$(show_git_dirty)/"
 }
 
-export PS1='\u@\h \[\033[1;32m\]\W\[\033[0m\]$(parse_git_branch)$ '
+export PS1='\u@\h \[\033[1;32m\]\W\[\033[0m\]$(show_git_branch)$ '
