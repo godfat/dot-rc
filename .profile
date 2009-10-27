@@ -14,7 +14,7 @@ export GEM_HOME=~/.gem/ruby/1.9.1
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export PS1='\u \W \v$ '
+export PS1='\u \W$ '
 
 export EDITOR=vim
 export DISPLAY=localhost:0.0
