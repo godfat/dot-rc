@@ -14,7 +14,7 @@ end
 function fish_prompt -d "custom prompt"
   set git (show_git_branch)
   if test $git
-    printf '%s%s%s%s%s> ' (set_color $fish_color_cwd) (prompt_pwd) (set_color $fish_color_operator) $git (set_color normal)
+    printf '%s%s%s%s%s> ' (set_color $fish_color_cwd) (prompt_pwd) (set_color cyan) $git (set_color normal)
   else
     printf '%s %s%s%s> ' (whoami) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
   end
