@@ -20,8 +20,12 @@ function fish_prompt -d "custom prompt"
   end
 end
 
+function show_git_dirty -d "show * if working directory is not clean"
+  if test (git status 2> /dev/null | tail -n1) != 'nothing to commit (working directory clean)' 2> /dev/null
+    echo ' *'
+  end
+end
+
 function show_git_branch -d "show git branch if any"
-  set ref (git symbolic-ref HEAD 2> /dev/null)
-  test $ref; or return
-  echo " $ref" | sed s/refs\\/heads\\///g
+  git symbolic-ref HEAD 2> /dev/null | sed -e 's/refs\/heads\/\(.*\)/'(show_git_dirty)'\1/'
 end
