@@ -1,6 +1,7 @@
 
 export PATH=\
 ~/bin:\
+~/.gem/ruby/1.9.1/bin/:\
 /opt/local/bin:\
 /opt/local/sbin:\
 /opt/local/apache2/bin:\
