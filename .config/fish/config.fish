@@ -23,5 +23,5 @@ end
 function show_git_branch -d "show git branch if any"
   set ref (git symbolic-ref HEAD 2> /dev/null)
   test $ref; or return
-  echo " @$ref" | sed s/refs\\/heads\\///g
+  echo " $ref" | sed s/refs\\/heads\\///g
 end
