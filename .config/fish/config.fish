@@ -3,8 +3,12 @@ function ls -d "color and utf-8 support"
   ls -Gw $argv
 end
 
-function ll -d "dunno what's this XD"
-  ls -hlw $argv
+function ll -d "short for ls -lh"
+  ls -lh $argv
+end
+
+function la -d "short for ll -a"
+  ll -a $argv
 end
 
 function fish_prompt -d "custom prompt"
