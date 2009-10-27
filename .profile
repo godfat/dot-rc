@@ -30,20 +30,24 @@ export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 fish
 
 # bash specific
-function git_aqua_begin {
-  echo -e '\033[1;36m'
-}
-
-function git_aqua_end   {
-  echo -e '\033[0m'
+function bash_prompt {
+  git=`show_git_branch`
+  where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'
+  if test $git; then
+    echo -e $where' \033[1;36m'$git'\033[0m$ '
+  else
+    echo -e `whoami`@`hostname -s` $where'$ '
+  fi
 }
 
 function show_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
+  if test "$(git status 2> /dev/null | tail -n1)" != 'nothing to commit (working directory clean)' 2> /dev/null; then
+    echo '*'
+  fi
 }
 
 function show_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ $(git_aqua_begin)\1$(git_aqua_end)$(show_git_dirty)/"
+  git symbolic-ref HEAD 2> /dev/null | sed 's/refs\/heads\/\(.*\)/'`show_git_dirty`'\1/'
 }
 
-export PS1='\u@\h \[\033[1;32m\]\W\[\033[0m\]$(show_git_branch)$ '
+export PS1='`bash_prompt`'
