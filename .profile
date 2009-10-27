@@ -8,6 +8,9 @@ export PATH=\
 /usr/local/bin:\
 $PATH
 
+# rubygems in ruby 1.9 has a bug that can't correctly read user gems...
+export GEM_HOME=~/.gem/ruby/1.9.1
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
