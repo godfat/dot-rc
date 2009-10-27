@@ -34,6 +34,7 @@ function bash_prompt {
   git=`show_git_branch`
   where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'
   if test $git; then
+    # bash need echo -e to make color work
     echo -e $where' \033[1;36m'$git'\033[0m$ '
   else
     echo -e `whoami`@`hostname -s` $where'$ '
@@ -41,6 +42,7 @@ function bash_prompt {
 }
 
 function show_git_dirty {
+  # how queer in test we can't use `` to do sub
   if test "$(git status 2> /dev/null | tail -n1)" != 'nothing to commit (working directory clean)' 2> /dev/null; then
     echo '*'
   fi

@@ -24,7 +24,7 @@ function show_git_dirty -d 'show * if working directory is not clean'
   if test (git status 2> /dev/null | tail -n1) != 'nothing to commit (working directory clean)' 2> /dev/null
     echo '*'
   else
-    echo
+    echo # if you don't echo, sub would produce nothing instead of empty
   end
 end
 
