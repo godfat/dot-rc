@@ -11,8 +11,13 @@ function la -d 'short for ll -a'
   ll -a $argv
 end
 
-function lld -d 'short for ll -d .*'
-  ll -d .*
+function lsd -d 'list all hidden files'
+  if test $argv
+    set argv $argv/.
+  else
+    set argv '.'
+  end
+  ls -d $argv*
 end
 
 function fish_prompt -d 'custom prompt'
