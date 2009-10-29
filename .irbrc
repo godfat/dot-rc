@@ -28,6 +28,7 @@ begin
     lines = lines[-history_size, history_size] if lines.size > history_size
     puts "Saving #{lines.size} history lines to '#{history_path}'." if IRB.conf[:VERBOSE]
     File.open(history_path, 'w'){ |file| file.puts(lines.join("\n")) }
+    File.chmod(0600, history_path)
   end
 
 rescue => e
