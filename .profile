@@ -19,6 +19,7 @@ export TERM=xterm-color
 alias ls='ls -Gw'
 alias ll='ls -lhw'
 alias la='ll -a'
+alias lld='ll -d .*'
 
 # rubygems in ruby 1.9 has a bug that can't correctly read user gems...
 export GEM_HOME=~/.gem/ruby/1.9.1

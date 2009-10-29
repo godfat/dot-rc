@@ -11,6 +11,10 @@ function la -d 'short for ll -a'
   ll -a $argv
 end
 
+function lld -d 'short for ll -d .*'
+  ll -d .*
+end
+
 function fish_prompt -d 'custom prompt'
   set git (show_git_branch)
   if test $git
