@@ -8,7 +8,7 @@ require 'irb/completion'
 IRB.conf[:PROMPT_MODE] = :SIMPLE if IRB.conf[:PROMPT_MODE] == :DEFAULT
 
 # Setup permanent history.
-history_path = '~/.irb_history'
+history_path = '~/.config/irb/irb_history'
 history_size = 100
 
 begin
@@ -20,7 +20,9 @@ begin
     Readline::HISTORY.push(*lines)
 
   else
-    puts "History file '#{history_path}' was empty or non-existant." if IRB.conf[:VERBOSE]
+    puts "History file '#{history_path}' was empty or non-existant, creating." if IRB.conf[:VERBOSE]
+    require 'fileutils'
+    FileUtils.mkdir_p(File.dirname(history_path))
   end
 
   Kernel.at_exit do
