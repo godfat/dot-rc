@@ -5,9 +5,11 @@
   status = auto
   ui = auto
 [diff]
-  renames = true
+  renames = copy
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
 [push]
   default = matching
+[merge]
+  log = true
