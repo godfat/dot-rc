@@ -39,12 +39,11 @@ fi
 
 function bash_prompt {
   git=`show_git_branch`
-  # where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'@`whoami`' '
   where=`whoami`@`hostname`
 
   if test $where = 'godfat@godfat'; then
     where=''
-  else
+  else # i don't know why trailing space would make test fail
     where=$where' '
   fi
 
