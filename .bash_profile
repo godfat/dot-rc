@@ -26,9 +26,16 @@ export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 fish
 
 # linux bash specific
-alias ls='ls --color'
-alias ll='ls -l'
-alias la='ll -a'
+if   test `uname` = 'Linux'; then
+  alias ls='ls --color'
+  alias ll='ls -l'
+  alias la='ll -a'
+# mac bash specific
+elif test `uname` = 'Darwin'; then
+  alias ls='ls -Gw'
+  alias ll='ls -lhw'
+  alias la='ll -a'
+fi
 
 function bash_prompt {
   git=`show_git_branch`
