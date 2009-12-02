@@ -14,11 +14,7 @@ export LANG=en_US.UTF-8
 
 export EDITOR=vim
 export DISPLAY=localhost:0.0
-
 export TERM=xterm-color
-alias ls='ls -Gw'
-alias ll='ls -lhw'
-alias la='ll -a'
 
 # rubygems in ruby 1.9 has a bug that can't correctly read user gems...
 export GEM_HOME=~/.gem/ruby/1.9.1
@@ -29,7 +25,11 @@ export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 # start fishing...
 fish
 
-# bash specific
+# linux bash specific
+alias ls='ls --color'
+alias ll='ls -l'
+alias la='ll -a'
+
 function bash_prompt {
   git=`show_git_branch`
   where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'
