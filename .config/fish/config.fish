@@ -14,10 +14,25 @@ end
 
 function fish_prompt -d 'custom prompt'
   set git (show_git_branch)
-  if test $git
-    echo (set_color green)(prompt_pwd)(set_color cyan) $git(set_color normal)'> '
+  set where (whoami)@(hostname)' '
+
+  if test $where = 'godfat@godfat '
+    set where ''
+  end
+
+  if test (prompt_pwd)
+    set cwd (prompt_pwd)
   else
-    echo (whoami) (set_color green)(prompt_pwd)(set_color normal)'> '
+    set cwd '/'
+  end
+
+  set prompt $where(set_color green)$cwd
+
+  # could echo be omitted?
+  if test ! $git -o (echo (git config --get fish.hide))
+    echo $prompt(set_color normal)'> '
+  else
+    echo $prompt(set_color cyan) $git(set_color normal)'> '
   end
 end
 
