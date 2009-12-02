@@ -44,6 +44,8 @@ function bash_prompt {
 
   if test $where = 'godfat@godfat'; then
     where=''
+  else
+    where=$where' '
   fi
 
   cwd=`pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\\\1/")'`
