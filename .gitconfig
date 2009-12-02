@@ -10,6 +10,6 @@
   name = Lin Jen-Shin
   email = godfat@godfat.org
 [push]
-  default = matching
+  default = tracking
 [merge]
   log = true
