@@ -28,11 +28,14 @@ function fish_prompt -d 'custom prompt'
 
   set prompt $where(set_color green)$cwd
 
-  # could echo be omitted?
-  if test ! $git -o (echo (git config --get fish.hide))
-    echo $prompt(set_color normal)'> '
+  if test $git
+    if test (git config --get fish.hide)
+      echo $prompt(set_color cyan) (show_git_dirty)(set_color normal)'> '
+    else
+      echo $prompt(set_color cyan) $git(set_color normal)'> '
+    end
   else
-    echo $prompt(set_color cyan) $git(set_color normal)'> '
+    echo $prompt(set_color normal)'> '
   end
 end
 
