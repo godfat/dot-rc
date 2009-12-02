@@ -1,4 +1,8 @@
 
+function mate-git -d 'mate a project'
+  mate (git ls-files | sed 's/\/.*//g' | uniq)
+end
+
 function lsd -d 'list all hidden files'
   if test $argv
     set argv $argv/.
