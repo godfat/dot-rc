@@ -1,16 +1,4 @@
 
-function ls -d 'color and utf-8 support'
-  ls -Gw $argv
-end
-
-function ll -d 'short for ls -lh'
-  ls -lh $argv
-end
-
-function la -d 'short for ll -a'
-  ll -a $argv
-end
-
 function lsd -d 'list all hidden files'
   if test $argv
     set argv $argv/.
