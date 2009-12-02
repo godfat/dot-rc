@@ -1,1 +1,9 @@
-*
+/*
+!/.config
+
+.config/fish/fishd.*
+.config/fish/fish_history
+.config/irb/irb_history
+
+.config/Parallels/
+.config/gtk-2.0/
