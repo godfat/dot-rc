@@ -39,12 +39,30 @@ fi
 
 function bash_prompt {
   git=`show_git_branch`
-  where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'
+  # where='\033[1;32m'`pwd | sed 's/.*\///g'`'\033[0m'@`whoami`' '
+  where=`whoami`@`hostname`
+
+  if test $where = 'godfat@godfat'; then
+    where=''
+  fi
+
+  cwd=`pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\\\1/")'`
+  if test `pwd` = $HOME; then
+    cwd='~'
+  elif test -z $cwd; then
+    cwd='/'
+  fi
+  prompt=$where'\033[1;32m'$cwd
+
   if test $git; then
-    # bash need echo -e to make color work
-    echo -e $where' \033[1;36m'$git'\033[0m$ '
+    if test `git config --get fish.hide`; then
+      # bash need echo -e to make color work
+      echo -e $prompt'\033[1;36m'`show_git_dirty`'\033[0m$ '
+    else
+      echo -e $prompt'\033[1;36m' $git'\033[0m$ '
+    fi
   else
-    echo -e `whoami`@`hostname -s` $where'$ '
+    echo -e $prompt'\033[0m$ '
   fi
 }
 
