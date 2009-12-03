@@ -1,6 +1,11 @@
 
 function mate-git -d 'mate a project'
+  set cwd (/bin/pwd)
+  if test $argv
+    cd $argv
+  end
   mate (git ls-files | sed 's/\/.*//g' | uniq)
+  cd $cwd
 end
 
 function lsd -d 'list all hidden files'
