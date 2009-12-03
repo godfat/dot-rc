@@ -28,19 +28,19 @@ if test $(which fish 2> /dev/null); then
 fi
 
 # linux bash specific
-if   test `uname` = 'Linux'; then
+if   test $(uname) = 'Linux'; then
   alias ls='ls --color'
   alias ll='ls -l'
   alias la='ll -a'
 # mac bash specific
-elif test `uname` = 'Darwin'; then
+elif test $(uname) = 'Darwin'; then
   alias ls='ls -Gw'
   alias ll='ls -lhw'
   alias la='ll -a'
 fi
 
 function bash_where {
-  where=`whoami`@`hostname`
+  where=$(whoami)@$(hostname)
 
   if test $where = 'godfat@godfat'; then
     echo ''
@@ -50,8 +50,8 @@ function bash_where {
 }
 
 function bash_cwd {
-  cwd=`pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\\\1/")'`
-  if test `pwd` = $HOME; then
+  cwd=$(pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\1/")')
+  if test $(pwd) = $HOME; then
     cwd='~'
   elif test -z $cwd; then
     cwd='/'
@@ -61,12 +61,12 @@ function bash_cwd {
 }
 
 function bash_git {
-  git=`show_git_branch`
+  git=$(show_git_branch)
 
   if test $git; then
-    if test `git config --get fish.hide`; then
+    if test $(git config --get fish.hide); then
       # why double quotes?
-      echo "`show_git_dirty`"
+      echo "$(show_git_dirty)"
     else
       echo ' '$git
     fi
@@ -83,7 +83,7 @@ function show_git_dirty {
 }
 
 function show_git_branch {
-  git symbolic-ref HEAD 2> /dev/null | sed 's/refs\/heads\/\(.*\)/'`show_git_dirty`'\1/'
+  git symbolic-ref HEAD 2> /dev/null | sed 's/refs\/heads\/\(.*\)/'$(show_git_dirty)'\1/'
 }
 
-export PS1='`bash_where`\[\e[32m\]`bash_cwd`\[\e[36m\]`bash_git`\[\e[0m\]$ '
+export PS1='$(bash_where)\[\e[32m\]$(bash_cwd)\[\e[36m\]$(bash_git)\[\e[0m\]$ '
