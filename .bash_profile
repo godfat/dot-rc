@@ -41,12 +41,10 @@ function bash_where {
   where=`whoami`@`hostname`
 
   if test $where = 'godfat@godfat'; then
-    where=''
+    echo ''
   else # i don't know why trailing space would make test fail
-    where=$where' '
+    echo $where' '
   fi
-
-  echo $where
 }
 
 function bash_cwd {
