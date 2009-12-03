@@ -23,7 +23,9 @@ export GEM_HOME=~/.gem/ruby/1.9.1
 export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 
 # start fishing...
-fish
+if test `which fish`; then
+  fish
+fi
 
 # linux bash specific
 if   test `uname` = 'Linux'; then
