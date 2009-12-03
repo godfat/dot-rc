@@ -37,8 +37,7 @@ elif test `uname` = 'Darwin'; then
   alias la='ll -a'
 fi
 
-function bash_prompt {
-  git=`show_git_branch`
+function bash_where {
   where=`whoami`@`hostname`
 
   if test $where = 'godfat@godfat'; then
@@ -47,23 +46,32 @@ function bash_prompt {
     where=$where' '
   fi
 
+  echo $where
+}
+
+function bash_cwd {
   cwd=`pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\\\1/")'`
   if test `pwd` = $HOME; then
     cwd='~'
   elif test -z $cwd; then
     cwd='/'
   fi
-  prompt=$where'\033[1;32m'$cwd
+
+  echo $cwd
+}
+
+function bash_git {
+  git=`show_git_branch`
 
   if test $git; then
     if test `git config --get fish.hide`; then
-      # bash need echo -e to make color work
-      echo -e $prompt'\033[1;36m'`show_git_dirty`'\033[0m$ '
+      # why double quotes?
+      echo "`show_git_dirty`"
     else
-      echo -e $prompt'\033[1;36m' $git'\033[0m$ '
+      echo ' '$git
     fi
   else
-    echo -e $prompt'\033[0m$ '
+    echo ''
   fi
 }
 
@@ -78,4 +86,4 @@ function show_git_branch {
   git symbolic-ref HEAD 2> /dev/null | sed 's/refs\/heads\/\(.*\)/'`show_git_dirty`'\1/'
 }
 
-export PS1='`bash_prompt`'
+export PS1='`bash_where`\[\e[32m\]`bash_cwd`\[\e[36m\]`bash_git`\[\e[0m\]$ '
