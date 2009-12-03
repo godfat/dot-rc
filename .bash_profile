@@ -23,7 +23,7 @@ export GEM_HOME=~/.gem/ruby/1.9.1
 export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 
 # start fishing...
-if test `which fish`; then
+if test $(which fish 2> /dev/null); then
   fish
 fi
 
