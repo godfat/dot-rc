@@ -21,7 +21,7 @@ function fish_prompt -d 'custom prompt'
   set git (show_git_branch)
   set where (whoami)@(hostname)' '
 
-  if test $where = 'godfat@godfat '
+  if test $where = 'godfat@godfat.local '
     set where ''
   end
 

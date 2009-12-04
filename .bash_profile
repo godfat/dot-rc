@@ -42,7 +42,7 @@ fi
 function bash_where {
   where=$(whoami)@$(hostname)
 
-  if test $where = 'godfat@godfat'; then
+  if test $where = 'godfat@godfat.local'; then
     echo ''
   else # i don't know why trailing space would make test fail
     echo $where' '
