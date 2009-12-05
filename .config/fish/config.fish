@@ -4,7 +4,9 @@ function mate-git -d 'mate a project'
   if test $argv
     cd $argv
   end
-  mate (git ls-files | sed 's/\/.*//g' | uniq)
+  # here we are removing depth>1 path
+  # and tr remove quotes, and sed add back quotes
+  mate (git ls-files | tr -d '"' | sed -E 's/([^/]*)\/?.*/"\1"/g' | uniq)
   cd $cwd
 end
 
