@@ -19,6 +19,15 @@ function lsd -d 'list all hidden files'
   ls -d $argv*
 end
 
+function lld -d 'list all hidden files'
+  if test $argv
+    set argv $argv/.
+  else
+    set argv '.'
+  end
+  ll -d $argv*
+end
+
 function fish_prompt -d 'custom prompt'
   set git (show_git_branch)
   set where (whoami)@(hostname)' '
