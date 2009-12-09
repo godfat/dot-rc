@@ -10,6 +10,12 @@ function mate-git -d 'mate a project'
   cd $cwd
 end
 
+function mate-gem -d 'mate a gem'
+   if test ! (mate (gem which $argv | sed -E 's/([^/]*)\/[^/]*\/\w*\.rb$/\1/g') 2> /dev/null)
+     echo "Can't find ruby library file or shared library $argv"
+   end
+end
+
 function lsd -d 'list all hidden files'
   if test $argv
     set argv $argv/.
