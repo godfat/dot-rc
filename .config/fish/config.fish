@@ -1,4 +1,8 @@
 
+function screen -d 'login resume screen'
+  screen -R# -s -
+end
+
 function mate-git -d 'mate a project'
   set cwd (/bin/pwd)
   if test $argv
