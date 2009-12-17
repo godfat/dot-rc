@@ -17,7 +17,7 @@ export DISPLAY=localhost:0.0
 export TERM=xterm-color
 
 # rubygems in ruby 1.9 has a bug that can't correctly read user gems...
-export GEM_HOME=~/.gem/ruby/1.9.1
+# export GEM_HOME=~/.gem/ruby/1.9.1
 
 # mac specific, utf-8 for pbcopy
 export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
