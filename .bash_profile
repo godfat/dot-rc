@@ -19,8 +19,10 @@ export TERM=xterm-color
 # rubygems in ruby 1.9 has a bug that can't correctly read user gems...
 # export GEM_HOME=~/.gem/ruby/1.9.1
 
-# mac specific, utf-8 for pbcopy
-export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
+# mac specific, utf-8 for pbcopy, no need for 10.6,
+# and it would cause problems in 10.6, see:
+# http://blogger.godfat.org/2009/12/mac-os-106-cfusertextencoding.html
+# export __CF_USER_TEXT_ENCODING=0x1F5:0x8000100:0x8000100
 
 # start fishing...
 if test $(which fish 2> /dev/null); then
