@@ -3,6 +3,7 @@
 export PATH=\
 ~/bin:\
 ~/.gem/ruby/1.9.1/bin:\
+~/.gem/ruby/1.8/bin:\
 /opt/local/bin:\
 /opt/local/sbin:\
 /opt/local/lib/postgresql84/bin:\
