@@ -1,0 +1,30 @@
+
+pre{
+  font-family: "DejaVu Sans Mono", monospace !important;
+  font-size: 1em !important;
+}
+
+/* Obviate need to zoom on many sites. */
+html>body {
+  font-size: 100% !important;
+  line-height: normal !important;
+}
+
+/*
+ * Many input forms have typing areas so small it's hard to use
+ * them. On many of them, this sets a minimum width of about 50
+ * characters, and a miniumum height of about 12 characters.
+ */
+textarea {
+  min-width: 10em !important;
+  min-height: 1em !important;
+}
+
+/* Disable marquee display */
+marquee {
+  -moz-binding: none; display: block; height: auto !important;
+  /* This is better than just display:none !important;
+   * because you can still see the text in the marquee,
+   * but without scrolling.
+   */
+}
