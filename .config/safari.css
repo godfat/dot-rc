@@ -1,7 +1,7 @@
 
 body, html, a, div, p, ol, ul, li, h1, h2, h3, h4, h5, h6, form, input, object, embed, blockquote, strong, td {
-  font-family: "儷黑 Pro", "LiHei Pro";
-  line-height: normal !important;
+  font-family: "DejaVu Sans", "儷黑 Pro", "LiHei Pro", sans-serif;
+  line-height: 1.4em !important;
 }
 
 pre{
