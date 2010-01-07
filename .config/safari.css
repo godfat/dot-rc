@@ -1,15 +1,10 @@
 
 body, html, a, div, p, ol, ul, li, h1, h2, h3, h4, h5, h6, form, input, object, embed, blockquote, strong, td {
   font-family: "儷黑 Pro", "LiHei Pro";
+  line-height: normal !important;
 }
 
 pre{
   font-family: "DejaVu Sans Mono", monospace !important;
   font-size: 1em !important;
-}
-
-/* Obviate need to zoom on many sites. */
-html>body {
-  font-size: 100% !important;
-  line-height: normal !important;
 }
