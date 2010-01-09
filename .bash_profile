@@ -30,6 +30,10 @@ if test $(which fish 2> /dev/null); then
   fish
 fi
 
+if test -e ~/.rvm/scripts/rvm; then
+  source ~/.rvm/scripts/rvm
+fi
+
 # linux bash specific
 if   test $(uname) = 'Linux'; then
   alias ls='ls --color'
