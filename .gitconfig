@@ -13,3 +13,14 @@
   default = tracking
 [merge]
   log = true
+
+# https://git.wiki.kernel.org/index.php/Aliases
+[alias]
+  master = checkout master
+  stable = checkout stable
+     dev = checkout dev
+
+  st = status
+  co = checkout
+
+  logo = log ORIG_HEAD.. --stat
