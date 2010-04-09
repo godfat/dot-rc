@@ -24,3 +24,5 @@
   co = checkout
 
   logo = log ORIG_HEAD.. --stat
+
+  sync = !git branch -r | egrep '^[^>]+$' | sed -E 's/(.*?)\\/(.*?)/git branch \\2 --track\\1\\/\\2/' | ruby -e 'puts $stdin.read.split(\"\n\").map{ |s| send(:`, s) }.reject(&:empty?)' 2> /dev/null
