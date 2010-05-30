@@ -4,10 +4,8 @@ export PATH=\
 ~/bin:\
 ~/.gem/ruby/1.9.1/bin:\
 ~/.gem/ruby/1.8/bin:\
-/opt/local/bin:\
-/opt/local/sbin:\
-/opt/local/lib/postgresql84/bin:\
-/opt/local/apache2/bin:\
+/usr/local/bin:\
+/usr/local/sbin:\
 $PATH
 
 export LC_ALL=en_US.UTF-8
