@@ -1,0 +1,14 @@
+
+enabled:
+  Adblock Plus
+  Download Statusbar
+  Flashblock
+  HttpFox
+  Tab Mix Plus
+  Text Area Resizer and Mover
+  新同文堂
+
+disabled:
+  Firebug
+  Page Speed
+  Web Developer

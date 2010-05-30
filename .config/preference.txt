@@ -1,0 +1,7 @@
+~/Library/Application\ Support/Yahoo!\ KeyKey
+
+~/Library/Preferences/com.macromates.textmate.plist
+~/Library/Preferences/net.sourceforge.iTerm.plist
+~/Library/Preferences/org.yllan.Nally.plist
+
+~/.config/fish/fish_history
