@@ -1,5 +1,8 @@
+
+~/Library/Application\ Support/Adium\ 2.0
 ~/Library/Application\ Support/Yahoo!\ KeyKey
 
+~/Library/Preferences/com.adiumX.adiumX.plist
 ~/Library/Preferences/com.macromates.textmate.plist
 ~/Library/Preferences/net.sourceforge.iTerm.plist
 ~/Library/Preferences/org.yllan.Nally.plist
