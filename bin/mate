@@ -1,2 +1,2 @@
 #!/usr/bin/env ruby
-`open -a TextMate #{ARGV.join ' '}`
+`open -a TextMate '#{ARGV.join ' '}'`
