@@ -23,7 +23,7 @@
   st = status
   co = checkout
 
-  rmall = !git status | grep 'deleted:' | sed -E 's/.+\\deleted:\\s+//' | xargs git rm
+  rmall = !git status | grep 'deleted:' | gsed -E 's/.+\\deleted:\\s+//' | xargs git rm
 
   logo = log ORIG_HEAD.. --stat
 
