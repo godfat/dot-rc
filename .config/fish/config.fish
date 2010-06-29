@@ -1,13 +1,4 @@
 
-function mate-gem -d 'mate a gem'
-  set path (gem which $argv)
-  if test $path = "Can't find ruby library file or shared library $argv"
-    echo $path
-  else
-    mate (echo $path | sed -E 's/([^/]*)\/[^/]*\/[^/]*?\.rb/\1/g')
-  end
-end
-
 function fish_prompt -d 'custom prompt'
   set git (show_git_branch)
   set where (whoami)@(hostname)' '

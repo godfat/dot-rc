@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+if (path = `gem which #{ARGV.first}`).empty?
+else
+  `mate #{path.sub(/lib.+/, '')}`
+end
