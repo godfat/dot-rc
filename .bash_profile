@@ -21,21 +21,10 @@ if test $(which fish 2> /dev/null); then
 fi
 
 source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+source ~/.bashrc
 
 if test -e ~/.rvm/scripts/rvm; then
   source ~/.rvm/scripts/rvm
-fi
-
-# linux bash specific
-if   test $(uname) = 'Linux'; then
-  alias ls='ls --color'
-  alias ll='ls -l'
-  alias la='ll -a'
-# mac bash specific
-elif test $(uname) = 'Darwin'; then
-  alias ls='ls -Gw'
-  alias ll='ls -lhw'
-  alias la='ll -a'
 fi
 
 function bash_where {
