@@ -46,9 +46,6 @@ elif test $(uname) = 'Darwin'; then
   alias la='ll -a'
 fi
 
-# login resume screen
-alias screen='screen -R'
-
 function bash_where {
   where=$(whoami)@$(hostname)
 
