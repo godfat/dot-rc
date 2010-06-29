@@ -1,4 +1,6 @@
 
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+
 # common setting
 export PATH=\
 ~/bin:\
