@@ -1,6 +1,4 @@
 
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
-
 # common setting
 export PATH=\
 ~/bin:\
@@ -29,6 +27,8 @@ export TERM=xterm-color
 if test $(which fish 2> /dev/null); then
   fish
 fi
+
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
 if test -e ~/.rvm/scripts/rvm; then
   source ~/.rvm/scripts/rvm
