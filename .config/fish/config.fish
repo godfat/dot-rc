@@ -1,15 +1,4 @@
 
-function mate-git -d 'mate a project'
-  set cwd (/bin/pwd)
-  if test $argv
-    cd $argv
-  end
-  # here we are removing depth>1 path
-  # and tr remove quotes, and sed add back quotes
-  mate (git ls-files | tr -d '"' | sed -E 's/([^/]*)\/?.*/\1/g' | uniq)
-  cd $cwd
-end
-
 function mate-gem -d 'mate a gem'
   set path (gem which $argv)
   if test $path = "Can't find ruby library file or shared library $argv"
