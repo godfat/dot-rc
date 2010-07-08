@@ -27,6 +27,10 @@ if test -e ~/.rvm/scripts/rvm; then
   source ~/.rvm/scripts/rvm
 fi
 
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
+
 function bash_where {
   where=$(whoami)@$(hostname)
 
