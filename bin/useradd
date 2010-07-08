@@ -28,7 +28,7 @@ sh("sudo dscl . passwd /Users/#{name} ", passwd)
 
 # setup UID (how come this is not strictly required?)
 uid = `dscl . list /Users UniqueID | awk '{print $2}' | sort -ug | tail -1`.
-      chop
+      chop.to_i + 1
 
 sh("sudo dscl . create /Users/#{name} UniqueID #{uid}")
 
