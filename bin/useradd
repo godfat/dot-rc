@@ -9,7 +9,7 @@ passwd  = H.ask('Password: '){ |q| q.echo     = false }
 
 def sh command, secret=nil
   puts(secret ? command + secret.gsub(/./, '*') : command)
-  system(command + secret.to_s)
+  exit(1) unless system(command + secret.to_s)
 end
 
 # simplest useradd
