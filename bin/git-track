@@ -7,11 +7,11 @@ end
 
 branch = `git branch | grep '*' | sed 's/* //'`.strip
 remote = if ARGV.empty?
-           # if size == 1 then first, otherwise nil
-           `git remote`.split(/\s+/).inject{ |r, i| i ? nil : r }
+           `git remote`.split(/\s+/)
          else
-           ARGV.first
-         end
+           ARGV
+         # if size == 1 then first, otherwise nil
+         end.inject{ |r, i| i ? nil : r }
 
 if remote.nil?
   puts("Which remote do you want to track?")
