@@ -7,7 +7,7 @@ set termencoding=utf-8
 
 set noautoindent               " this is annoying when pasting from clipboard
 set nocompatible               " don't simulate vi
-set paste                      " try paste mode
+"set paste                      " try paste mode
 
 set backspace=indent,eol,start " more powerful backspacing
 set bs=2                       " backspace
