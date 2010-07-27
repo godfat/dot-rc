@@ -13,7 +13,7 @@ function fish_prompt -d 'custom prompt'
     set cwd '/'
   end
 
-  set prompt $where(set_color green)$cwd
+  set prompt (echo \x1b'[38;5;102m')(date '+%H:%M')' '(set_color normal)$where(set_color green)$cwd
 
   if test $git
     if test (git config --get fish.hide)
