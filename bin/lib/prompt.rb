@@ -39,7 +39,7 @@ module Prompt
 
   def prompt
     msg = `git config --get fish.hide`.empty? ? :dirty_branch : :dirty
-    "#{color(102){time}} #{normal{where}}#{green{cwd}}#{cyan{send(msg)}}> "
+    "#{color(102){time}} #{normal{where}}#{green{cwd}}#{cyan{send(msg)}}$ "
   end
 
   # utility
