@@ -31,51 +31,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-function bash_where {
-  where=$(whoami)@$(hostname)
-
-  if test $where = 'godfat@godfat.local'; then
-    echo ''
-  else # i don't know why trailing space would make test fail
-    echo $where' '
-  fi
-}
-
-function bash_cwd {
-  cwd=$(pwd | ruby -e 'puts $stdin.read.sub(ENV["HOME"], "~").gsub(/(\w).*?\//, "\\1/")')
-  if test $(pwd) = $HOME; then
-    cwd='~'
-  elif test -z $cwd; then
-    cwd='/'
-  fi
-
-  echo $cwd
-}
-
-function bash_git {
-  git=$(show_git_branch)
-
-  if test $git; then
-    if test $(git config --get fish.hide); then
-      # why double quotes?
-      echo "$(show_git_dirty)"
-    else
-      echo ' '$git
-    fi
-  else
-    echo ''
-  fi
-}
-
-function show_git_dirty {
-  # how queer in test we can't use `` to do sub
-  if test "$(git status 2> /dev/null | tail -n1)" != 'nothing to commit (working directory clean)' 2> /dev/null; then
-    echo '*'
-  fi
-}
-
-function show_git_branch {
-  git symbolic-ref HEAD 2> /dev/null | sed 's/refs\/heads\/\(.*\)/'$(show_git_dirty)'\1/'
-}
-
-export PS1='$(bash_where)\[\e[32m\]$(bash_cwd)\[\e[36m\]$(bash_git)\[\e[0m\]$ '
+export PS1=''
+export PROMPT_COMMAND=prompt

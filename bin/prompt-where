@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
 require_relative 'lib/prompt'
-print Prompt.prompt
+puts Prompt.where
