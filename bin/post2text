@@ -3,4 +3,6 @@
 require 'yaml'
 require 'nokogiri'
 
-puts Nokogiri::HTML.parse(YAML.load($stdin.read)['body']).root.text
+d = YAML.load($stdin.read)
+puts "time: #{d['time']}\nname: #{d['name']}\n" \
+     "body:\n\n#{Nokogiri::HTML.parse(d['body']).root.text}"
