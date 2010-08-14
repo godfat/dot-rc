@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+puts YAML.load($stdin.read)['body'].gsub('  ', '&#8195;')
