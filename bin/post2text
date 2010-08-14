@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'yaml'
+require 'nokogiri'
+
+puts Nokogiri::HTML.parse(YAML.load($stdin.read)['body']).root.text
