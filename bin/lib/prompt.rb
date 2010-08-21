@@ -21,7 +21,7 @@ module Prompt
     case `git status --porcelain 2> /dev/null`
       when ''
         ''   # clean
-      when /\A(^[AMR]  [^\n]+\n)+\Z/
+      when /\A(^[AMDR]  [^\n]+\n)+\Z/
         '#' # all staged
       else
         '*' # dirty
