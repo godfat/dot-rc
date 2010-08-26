@@ -45,7 +45,7 @@ module Prompt
   end
 
   def normal &block
-    color(30, &block)
+    color('', &block)
   end
 
   def color rgb
