@@ -6,13 +6,6 @@ module Prompt
     Time.now.strftime('%H:%M')
   end
 
-  def where
-    require 'socket'
-    require 'etc'
-    s = "#{Etc.getlogin}@#{Socket.gethostname} "
-    s == 'godfat@godfat.local ' ? '' : s
-  end
-
   def cwd
     Dir.pwd.sub(/^#{ENV['HOME']}/, '~').gsub(/(\w).*?\//, '\1/')
   end
@@ -38,26 +31,25 @@ module Prompt
   end
 
   def prompt
-    msg = `git config --get fish.hide`.empty? ? :dirty_branch : :dirty
-    "#{color(102){time}} #{normal{where}}#{green{cwd}}#{cyan{send(msg)}}$ "
+    "#{green{time}} #{green{cwd}}#{cyan{dirty_branch}}$ "
   end
 
   # utility
 
   def green &block
-    color(2, &block)
+    color(32, &block)
   end
 
   def cyan &block
-    color(6, &block)
+    color(36, &block)
   end
 
   def normal &block
-    color(7, &block)
+    color(30, &block)
   end
 
   def color rgb
-    "\033[38;5;#{rgb}m" + (block_given? ? "#{yield}#{normal}" : '')
+    "\033[#{rgb}m" + (block_given? ? "#{yield}#{normal}" : '')
   end
 end
 
