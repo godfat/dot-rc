@@ -26,6 +26,7 @@
   rmall = !git status | grep 'deleted:' | sed -E 's/.*\\deleted: +//' | xargs git rm
 
   logo = log ORIG_HEAD.. --stat
+  loga = !git log --author=`whoami`
 
   sync = !git fetch && git coal && git merl
 
