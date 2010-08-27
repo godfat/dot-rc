@@ -16,10 +16,6 @@
 
 # https://git.wiki.kernel.org/index.php/Aliases
 [alias]
-  master = checkout master
-  stable = checkout stable
-     dev = checkout dev
-
   st = status
   co = checkout
 
