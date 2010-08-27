@@ -24,8 +24,4 @@
   logo = log ORIG_HEAD.. --stat
   loga = !git log --author=`git config user.email`
 
-  sync = !git fetch && git coal && git merl
-
   coal = !git branch -r | egrep '^[^>]+$' | sed -E 's/(.+)\\/(.+)/git branch \\2 --track\\1\\/\\2/' | ruby -e 'puts $stdin.read.split(\"\n\").map{ |s| send(:`, s) }.reject(&:empty?)' 2> /dev/null
-
-  merl = !git branch | egrep '^[^*]+$' | sed -E 's/  //' | ruby -e 'puts ($stdin.read.split(\"\n\") << send(:`, \"git symbolic-ref HEAD\").sub(\"refs/heads/\", \"\").strip).map{ |s| [s, send(:`, \"git config branch.%s.remote\" % [s]).strip] }.reject{ |s| s.last.empty? }.map{ |(branch, remote)| send(:`, \"git checkout %s\\x3b git merge %s/%s --ff-only\" % [branch, remote, branch]) }.reject(&:empty?)' 2> /dev/null
