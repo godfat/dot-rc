@@ -1,6 +1,11 @@
 #!/usr/bin/env ruby
 
-if (path = `gem which #{ARGV.first}`).empty?
+def sh command
+  puts command
+  `#{command}`
+end
+
+if (path = Gem.find_files(ARGV.first).first).empty?
 else
-  `mate #{path.sub(/lib.+/, '')}`
+  sh("mate #{path[Regexp.new("#{Gem.path.first}(/[^/]+){2}")]}")
 end
