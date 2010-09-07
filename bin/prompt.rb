@@ -3,11 +3,11 @@
 module Prompt
   module_function
   def prompt
-    "#{gray256{time}} #{reset{where}}#{green{cwd}}#{cyan{git}}$ "
+    "#{gray256{time}} #{reset{where}}#{green{cwd}}#{cyan{git}}$"
   end
 
   def prompt_lite
-    "#{red{time}} #{green{cwd}}#{cyan{git}}$ "
+    "#{red{time}} #{green{cwd}}#{cyan{git}}$"
   end
 
   def time

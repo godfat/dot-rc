@@ -31,5 +31,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-export PS1=''
+export PS1=' '
 export PROMPT_COMMAND=prompt-full
