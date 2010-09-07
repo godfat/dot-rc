@@ -1,0 +1,3 @@
+[submodule "dev-tool"]
+	path = dev-tool
+	url = git://github.com/godfat/dev-tool.git

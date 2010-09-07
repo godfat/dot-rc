@@ -1,4 +1,1 @@
-#!/usr/bin/env ruby
-
-require_relative 'prompt'
-print Prompt.prompt
+../dev-tool/bin/prompt-full
