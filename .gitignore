@@ -1,8 +1,1 @@
-/*
-!/.config
-!/bin
-
-.config/fish/fishd.*
-.config/fish/fish_history
-.config/fish/fish_history.tmp
-.config/irb/irb_history
+dev-tool/.gitignore
