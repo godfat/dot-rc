@@ -1,20 +1,18 @@
 #!/usr/bin/env ruby
 
-def set_color rgb
-  print "\x1b[38;5;#{rgb}m"
-end
-
-def reset_color
-  print "\x1b[0m"
-end
+require_relative 'prompt'
 
 size  = 4
 width = `tput cols`.to_i / size
 
+(30..37).each.with_index{ |rgb, index|
+  print Prompt.color(rgb){ sprintf "%#{size}s", rgb }
+  print "\n" if (index + 1) % width == 0
+}
+puts
+
 (0..255).each.with_index{ |rgb, index|
-  set_color rgb
-  printf "%#{size}s", rgb
-  printf "\n" if (index + 1) % width == 0
-  reset_color
+  print Prompt.color256(rgb){ sprintf "%#{size}s", rgb }
+  print "\n" if (index + 1) % width == 0
 }
 puts

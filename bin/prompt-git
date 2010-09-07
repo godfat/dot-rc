@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 
-require_relative 'lib/prompt'
-puts `git config --get fish.hide`.empty? ? Prompt.dirty_branch : Prompt.dirty
+require_relative 'prompt'
+puts Prompt.git
