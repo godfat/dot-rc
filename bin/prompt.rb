@@ -15,10 +15,11 @@ module Prompt
   end
 
   def where
-    require 'socket'
-    require 'etc'
-    s = "#{Etc.getlogin}@#{Socket.gethostname} "
-    s == 'godfat@godfat.local ' ? '' : s
+    if ENV['PROMPT_HOST']
+      require 'socket'
+      require 'etc'
+      "#{Etc.getlogin}@#{Socket.gethostname} "
+    end
   end
 
   def cwd
