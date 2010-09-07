@@ -1,1 +1,1 @@
-/usr/local/Library/Contributions/brew_fish_completion.fish
+/Users/godfat/dev-tool/.config/fish/completions/brew.fish
