@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'yaml'
+require 'psych'
 require 'nokogiri'
 
-d = YAML.load($stdin.read)
+d = Psych.load($stdin.read)
 puts "time: #{d['time']}\nname: #{d['name']}\n" \
      "body:\n\n#{Nokogiri::HTML.parse(d['body'].
                  gsub('  ', '&#8195;')).root.text}"
