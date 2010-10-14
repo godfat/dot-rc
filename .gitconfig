@@ -23,5 +23,6 @@
 
   logo = log ORIG_HEAD.. --stat
   loga = !git log --color --author=`git config user.email` | less --raw
+  rollback = reset --hard
 
   coal = !git branch -r | egrep '^[^>]+$' | sed -E 's/(.+)\\/(.+)/git branch \\2 --track\\1\\/\\2/' | ruby -e 'puts $stdin.read.split(\"\n\").map{ |s| send(:`, s) }.reject(&:empty?)' 2> /dev/null
