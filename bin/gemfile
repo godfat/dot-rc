@@ -16,5 +16,5 @@ def stash
 end
 
 stash
-sh('rm Gemfile.lock; bundle list')
+sh('rm Gemfile.lock; bundle check')
 stash
