@@ -1,3 +1,6 @@
+[heroku]
+  remote = staging
+
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
