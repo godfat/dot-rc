@@ -1,2 +1,4 @@
 
-gem 'rainbows'
+group :development do
+  gem 'zbatery'
+end
