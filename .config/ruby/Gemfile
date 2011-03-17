@@ -1,4 +1,0 @@
-
-group :development do
-  gem 'zbatery'
-end
