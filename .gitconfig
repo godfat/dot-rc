@@ -1,6 +1,9 @@
 [heroku]
   remote = staging
 
+[cola]
+  fontdiff = DejaVu Sans Mono,18,-1,5,50,0,0,0,0,0
+
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
