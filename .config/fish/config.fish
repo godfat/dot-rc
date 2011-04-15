@@ -1,1 +1,1 @@
-/Users/godfat/dev-tool/.config/fish/config.fish
+../../dev-tool/.config/fish/config.fish
