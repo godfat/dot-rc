@@ -19,6 +19,8 @@
   default = tracking
 [merge]
   log = true
+[rebase]
+  stat = true
 
 # https://git.wiki.kernel.org/index.php/Aliases
 [alias]
