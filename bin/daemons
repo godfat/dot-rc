@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# postgres
+pg_ctl -D /usr/local/var/postgres start
+
+# memcached
+memcached -d
+
+# redis
+redis-server /usr/local/etc/redis.conf &
+
+# mongodb
+mongod run --fork --logpath /tmp/mongodb.log --config `brew --prefix mongo`/mongod.conf
