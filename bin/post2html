@@ -1,6 +1,0 @@
-#!/usr/bin/env ruby
-
-require 'psych'
-d = Psych.load($stdin.read)
-puts "time: #{d['time']}\nname: #{d['name']}\n" \
-     "body:\n#{d['body'].gsub('  ', '&#8195;')}"
