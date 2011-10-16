@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require 'kramdown'
+require 'nokogiri'
+
+def strip_newline node
+  if node.text? && node.children.empty?
+    node.replace(node.to_s.tr("\n", ''))
+  elsif node.name != 'pre'
+    node.children.each{ |child| strip_newline(child) }
+  end
+  node
+end
+
+input = if ARGV.empty?
+          $stdin.read
+        else
+          File.read(ARGV.first)
+        end
+
+head = <<-HTML
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+  </head>
+  <body>
+HTML
+
+body = Kramdown::Document.new(input).to_html
+
+tail = "</body></html>"
+
+puts strip_newline(
+  Nokogiri::XML.parse("#{head}#{body}#{tail}", nil, 'UTF-8')).to_html
