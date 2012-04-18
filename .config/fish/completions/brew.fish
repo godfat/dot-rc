@@ -1,1 +1,1 @@
-/Users/godfat/dev-tool/.config/fish/completions/brew.fish
+../../../dev-tool/.config/fish/completions/brew.fish
