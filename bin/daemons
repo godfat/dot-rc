@@ -10,4 +10,5 @@ memcached -d
 redis-server /usr/local/etc/redis.conf &
 
 # mongodb
-mongod run --fork --logpath /tmp/mongodb.log --config /usr/local/etc/mongod.conf
+mkdir /tmp/mongodb
+mongod run --fork --logpath /tmp/mongodb/mongodb.log --config /usr/local/etc/mongod.conf
