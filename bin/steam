@@ -1,0 +1,12 @@
+#!/bin/sh
+
+sudo hdiutil attach -mountpoint /steam ~/steam.sparseimage
+
+mkdir -p /steam/Steam
+ln -s /steam/Steam ~/Library/'Application Support'
+ln -s ~/Library/'Application Support'/Steam ~/Library/'Application Support'/steam
+
+ln -s ~/Library ~/library
+ln -s ~/Library/'Application Support' ~/Library/'application support'
+
+open /steam/Steam.app
