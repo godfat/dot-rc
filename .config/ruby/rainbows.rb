@@ -1,1 +1,0 @@
-/Users/godfat/dev-tool/.config/ruby/rainbows.rb
