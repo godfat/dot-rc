@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'heroku/cli'
+Heroku.singleton_class.module_eval do
+  alias_method :original_user_agent=, :user_agent=
+  def user_agent= agent
+    self.original_user_agent = agent.sub('gem', 'toolbelt')
+  end
+end
+
+load "#{Gem.path.find{ |p| File.exist?("#{p}/bin/heroku") }}/bin/heroku"
