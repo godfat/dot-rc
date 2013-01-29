@@ -7,6 +7,11 @@
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = godfat@godfat.org
+  smtpserverport = 587
 [color]
   branch = auto
   diff = auto
