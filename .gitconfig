@@ -1,9 +1,5 @@
 [heroku]
   remote = staging
-
-[cola]
-  fontdiff = DejaVu Sans Mono,18,-1,5,50,0,0,0,0,0
-
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
@@ -42,4 +38,3 @@
   rmall = !git status | grep 'deleted:' | sed -E 's/.*\\deleted: +(.+)$/\\1/' | sed 's/ /\\\\ /g' | xargs git rm
   aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 
-  coal = !git branch -r | egrep '^[^>]+$' | sed -E 's/(.+)\\/(.+)/git branch \\2 --track\\1\\/\\2/' | ruby -e 'puts $stdin.read.split(\"\n\").map{ |s| send(:`, s) }.reject(&:empty?)' 2> /dev/null
