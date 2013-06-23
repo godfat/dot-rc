@@ -3,6 +3,8 @@
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
+[mailmap]
+  file = ~/.config/git.mailmap.txt
 [sendemail]
   smtpencryption = tls
   smtpserver = smtp.gmail.com
