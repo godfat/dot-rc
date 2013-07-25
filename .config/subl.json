@@ -1,0 +1,31 @@
+{
+  // view settings
+  "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+  "font_face": "DejaVu Sans Mono",
+  "font_size": 20.0,
+
+  // rulers
+  "rulers": [78],
+  "word_wrap": true,
+  "wrap_width": 80,
+
+  // indention
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "indent_subsequent_lines": true,
+  "detect_indentation": true,
+
+  // pedantic whitespace
+  "draw_white_space": "all",
+  "trim_trailing_white_space_on_save": true,
+  "ensure_newline_at_eof_on_save": true,
+
+  // functionalities
+  "spell_check": true,
+  "auto_complete": false,
+
+  // editor settings
+  "highlight_modified_tabs": true,
+  "show_tab_close_buttons": false,
+  "scroll_speed": 0,
+}
