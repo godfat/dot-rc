@@ -12,7 +12,7 @@
   // indention
   "tab_size": 2,
   "translate_tabs_to_spaces": true,
-  "indent_subsequent_lines": true,
+  "indent_subsequent_lines": false,
   "detect_indentation": true,
 
   // pedantic whitespace
