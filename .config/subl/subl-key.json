@@ -1,0 +1,10 @@
+[
+  // i want default paste with indent
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+
+  // delete previous word as in terminal with ctrl+w
+  { "keys": ["ctrl+w"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+
+  // delete the line as in terminal with ctrl+c
+  { "keys": ["ctrl+c"],       "command": "run_macro_file", "args": {"file": "Packages/User/delete-line.sublime-macro"} },
+]

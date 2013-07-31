@@ -1,0 +1,24 @@
+[
+	{
+		"args":
+		{
+			"file": "res://Packages/Default/Delete Line.sublime-macro"
+		},
+		"command": "run_macro_file"
+	},
+	{
+		"args":
+		{
+			"by": "lines",
+			"forward": false
+		},
+		"command": "move"
+	},
+	{
+		"args":
+		{
+			"to": "eol"
+		},
+		"command": "move_to"
+	}
+]
