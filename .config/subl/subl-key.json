@@ -7,4 +7,8 @@
 
   // delete the line as in terminal with ctrl+c
   { "keys": ["ctrl+c"],       "command": "run_macro_file", "args": {"file": "Packages/User/delete-line.sublime-macro"} },
+
+  // home/end as in terminal
+  { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol"} },
+  { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"} },
 ]

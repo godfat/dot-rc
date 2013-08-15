@@ -23,6 +23,8 @@
   // functionalities
   "spell_check": true,
   "auto_complete": false,
+  // we prefer ESC completion with Alternative Autocompletion
+  "tab_completion": false,
 
   // editor settings
   "highlight_modified_tabs": true,
