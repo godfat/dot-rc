@@ -11,4 +11,7 @@
   // home/end as in terminal
   { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol"} },
   { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol"} },
+
+  // remove weird XML snippet for every languages
+  { "keys": ["ctrl+shift+w"], "command": "noop" },
 ]
