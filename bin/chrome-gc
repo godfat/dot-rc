@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ps -A -o pid,command | grep -v 'grep' | grep 'Chrome Helper --type=renderer' \
-| sed -E 's/([0-9]+).+/\1/' | xargs kill
