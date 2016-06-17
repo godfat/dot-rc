@@ -26,6 +26,8 @@
   log = true
 [rebase]
   stat = true
+[push]
+  default = current
 
 # https://git.wiki.kernel.org/index.php/Aliases
 [alias]
