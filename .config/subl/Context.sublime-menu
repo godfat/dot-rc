@@ -1,0 +1,5 @@
+[
+  {"caption": "Copy relative path",
+   "command": "side_bar_copy_path_relative_from_project",
+   "args": {"paths": []}}
+]
