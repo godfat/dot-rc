@@ -29,5 +29,6 @@
   // editor settings
   "highlight_modified_tabs": true,
   "show_tab_close_buttons": false,
+  "show_definitions": false,
   "scroll_speed": 0,
 }
