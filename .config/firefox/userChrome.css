@@ -1,0 +1,42 @@
+#tabbrowser-tabs .tab-close-button,
+#context_reloadTab,
+#context_toggleMuteTab,
+#context_toggleMuteTab + menuseparator,
+#context_openTabInWindow,
+#context_sendTabToDevice_separator,
+#context_sendTabToDevice,
+#context_sendTabToDevice + menuseparator,
+#context_reloadAllTabs,
+#context_bookmarkAllTabs,
+#context_closeTabsToTheEnd,
+#context_closeOtherTabs,
+#context_closeOtherTabs + menuseparator,
+#context_closeTab,
+#context-reload,
+#context-bookmarkpage,
+#context-pocket,
+#context-sep-sendpagetodevice,
+#context-sendpagetodevice
+{
+  display: none !important;
+  visibility: collapse !important;
+}
+
+menuitem[label="New Tab"] { -moz-box-ordinal-group: 0 }
+#context_duplicateTab { -moz-box-ordinal-group: 1 }
+menuitem[label="Unload Tab"] { -moz-box-ordinal-group: 2 }
+#context_pinTab { -moz-box-ordinal-group: 3 }
+#context_unpinTab { -moz-box-ordinal-group: 4 }
+#context_undoCloseTab { -moz-box-ordinal-group: 5 }
+menu[label="Undo Close Tab"] { -moz-box-ordinal-group: 6 }
+
+.tabbrowser-tab[pending="true"] {
+  background-color: gray !important;
+  color: crimson !important;
+  font-weight: bold !important;
+}
+
+.tabbrowser-tab[unread="true"] {
+  color: crimson !important;
+  font-weight: bold !important;
+}
