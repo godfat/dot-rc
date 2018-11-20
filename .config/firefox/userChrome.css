@@ -1,7 +1,13 @@
-#tabbrowser-tabs .tab-close-button,
+/*
+https://github.com/stonecrusher/simpleMenuWizard
+*/
+
+#tabbrowser-tabs .tab-close-button, /* Close tab button */
+/* Tab context menu */
 #context_reloadTab,
 #context_toggleMuteTab,
 #context_toggleMuteTab + menuseparator,
+#context_reopenInContainer,
 #context_openTabInWindow,
 #context_sendTabToDevice_separator,
 #context_sendTabToDevice,
@@ -12,11 +18,22 @@
 #context_closeOtherTabs,
 #context_closeOtherTabs + menuseparator,
 #context_closeTab,
+/* Tab bar menu */
+#toolbar-context-reloadAllTabs,
+#toolbar-context-bookmarkAllTabs,
+/* Page context menu */
 #context-reload,
 #context-bookmarkpage,
 #context-pocket,
 #context-sep-sendpagetodevice,
-#context-sendpagetodevice
+#context-sendpagetodevice,
+/* Link context menu */
+#context-openlinkinusercontext-menu,
+#context-openlink,
+#context-bookmarklink,
+#context-savelinktopocket,
+#context-sep-sendlinktodevice,
+#context-sendlinktodevice
 {
   display: none !important;
   visibility: collapse !important;
