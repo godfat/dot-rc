@@ -33,7 +33,9 @@ https://github.com/stonecrusher/simpleMenuWizard
 #context-bookmarklink,
 #context-savelinktopocket,
 #context-sep-sendlinktodevice,
-#context-sendlinktodevice
+#context-sendlinktodevice,
+/* Select context menu */
+#context-openlinkincurrent
 {
   display: none !important;
   visibility: collapse !important;
