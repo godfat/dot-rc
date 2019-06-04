@@ -3,6 +3,9 @@
 [user]
   name = Lin Jen-Shin
   email = godfat@godfat.org
+  signingkey = 7981A519E441F57C
+[commit]
+  gpgsign = true
 [mailmap]
   file = ~/.config/git.mailmap.txt
 [sendemail]
