@@ -3,6 +3,8 @@ https://github.com/stonecrusher/simpleMenuWizard
 */
 
 #tabbrowser-tabs .tab-close-button, /* Close tab button */
+notification[value="keyword-uri-fixup"] { display: none !important; }
+
 /* Tab context menu */
 #context_reloadTab,
 #context_toggleMuteTab,
