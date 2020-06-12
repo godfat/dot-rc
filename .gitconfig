@@ -31,6 +31,8 @@
   stat = true
 [push]
   default = upstream
+[pull]
+  ff = only
 
 # https://git.wiki.kernel.org/index.php/Aliases
 [alias]
