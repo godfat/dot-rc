@@ -1,14 +1,22 @@
 
 enabled:
-  Adblock Plus
-  Download Statusbar
-  Flashblock
-  HttpFox
-  Tab Mix Plus
-  Text Area Resizer and Mover
-  新同文堂
+  Country Flag +
+  DF YouTube (Distraction Free)
+  Disable Ctrl-Q and Cmd-Q
+  Firefox Multi-Account Containers
+  Google search link fix
+  HTTP/2 Indicator
+  New Tab Context
+  New Tong Wen Tang
+  Textarea Cache
+  uBlock Origin
+  Undo Close Tab
+  UnloadTabs
+  Video DownloadHelper
 
 disabled:
-  Firebug
-  Page Speed
-  Web Developer
+  ColorZilla
+  Cookie Quick Manager
+  Download All Images
+  Font Finder
+  Greasemonkey
