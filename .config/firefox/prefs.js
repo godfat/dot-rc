@@ -24,4 +24,5 @@ user_pref("tongwentang.contextMenu.InputTra", false);
 user_pref("tongwentang.contextMenu.PageSim", false);
 user_pref("tongwentang.contextMenu.TextZoom", false);
 user_pref("tongwentang.contextMenuIcon", false);
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("ui.context_menus.after_mouseup", true);
