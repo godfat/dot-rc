@@ -1,8 +1,8 @@
 {
   // view settings
-  "color_scheme": "Packages/Color Scheme - Default/Twilight.tmTheme",
+  "color_scheme": "Packages/User/Twilight.tmTheme",
   "font_face": "DejaVu Sans Mono",
-  "font_size": 20.0,
+  "font_size": 21.0,
 
   // rulers
   "rulers": [78],
@@ -28,7 +28,10 @@
 
   // editor settings
   "highlight_modified_tabs": true,
-  "show_tab_close_buttons": false,
+  "index_files": false,
+  "mini_diff": false,
   "show_definitions": false,
+  "show_git_status": false,
+  "show_tab_close_buttons": false,
   "scroll_speed": 0,
 }
