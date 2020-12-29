@@ -1,20 +1,16 @@
 
 user_pref("accessibility.force_disabled", 1);
-user_pref("accessibility.typeaheadfind.flashBar", 0);
 user_pref("accessibility.typeaheadfind.manual", false);
 user_pref("browser.contentblocking.category", "strict");
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.fixup.alternate.enabled", false);
-user_pref("browser.fixup.typo.scheme", false);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.newtabpage.enabled", false);
-user_pref("browser.newtabpage.enhanced", true);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
-user_pref("browser.urlbar.maxCharsForSearchSuggestions", 0);
 user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("general.smoothScroll", false);
