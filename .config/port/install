@@ -1,0 +1,11 @@
+#/bin/sh
+
+sudo port selfupdate
+
+sudo port install curl +gnutls +http2 wget +gnutls
+sudo port install coreutils fish git socat vim
+sudo port install ruby30 +doc
+
+sudo port select --set ruby ruby30
+
+sudo port reclaim
