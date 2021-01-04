@@ -2,7 +2,6 @@
 enabled:
   Country Flag +
   DF YouTube (Distraction Free)
-  Disable Ctrl-Q and Cmd-Q
   Firefox Multi-Account Containers
   Google search link fix
   HTTP/2 Indicator
@@ -18,5 +17,6 @@ disabled:
   ColorZilla
   Cookie Quick Manager
   Download All Images
+  Export Tabs URLs
   Font Finder
   Greasemonkey
