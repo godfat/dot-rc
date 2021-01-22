@@ -2,7 +2,7 @@
 
 sudo port -N selfupdate
 
-sudo port -N install coreutils fish git socat vim ripgrep
+sudo port -N install coreutils fish git socat vim ripgrep htop
 
 sudo port -N install ruby30 +doc
 sudo port -N select --set ruby ruby30
