@@ -1,14 +1,14 @@
 #/bin/sh
 
-sudo port -N selfupdate
+port -N selfupdate
 
-sudo port -N install coreutils fish git socat vim ripgrep htop
+port -N install coreutils fish git socat vim ripgrep htop
 
-sudo port -N install ruby30 +doc
-sudo port -N select --set ruby ruby30
+port -N install ruby30 +doc
+port -N select --set ruby ruby30
 
-sudo port -N install curl +gnutls +http2 wget +gnutls
-sudo port -N install gnupg2
-sudo port -N install ImageMagick MPlayer youtube-dl
+port -N install curl +gnutls +http2 wget +gnutls
+port -N install gnupg2
+port -N install ImageMagick MPlayer youtube-dl
 
-sudo port -N reclaim
+port -N reclaim
