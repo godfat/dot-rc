@@ -19,3 +19,4 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("ui.context_menus.after_mouseup", true);
+user_pref("widget.macos.native-context-menus", false);
