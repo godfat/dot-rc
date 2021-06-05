@@ -6,15 +6,18 @@ https://github.com/stonecrusher/simpleMenuWizard
 notification[value="keyword-uri-fixup"] { display: none !important; }
 
 /* Tab context menu */
+#context_openANewTab + menuseparator,
 #context_reloadTab,
 #context_toggleMuteTab,
 #context_duplicateTabs + menuseparator,
+#context_shareTabURL,
 #context_selectAllTabs,
+#context_selectAllTabs + menuseparator,
 #context_bookmarkTab,
 #context_moveTabOptions,
 #context_openTabInWindow,
 #context_sendTabToDevice,
-#context_sendTabToDevice + menuseparator,
+#context_reopenInContainer,
 #context_closeTabOptions,
 #context_closeTabsToTheEnd,
 #context_closeOtherTabs,
@@ -41,7 +44,7 @@ notification[value="keyword-uri-fixup"] { display: none !important; }
   visibility: collapse !important;
 }
 
-menuitem[label="New Tab"] { -moz-box-ordinal-group: 0 }
+#context_openANewTab { -moz-box-ordinal-group: 0 }
 #context_duplicateTab { -moz-box-ordinal-group: 1 }
 #context_pinTab { -moz-box-ordinal-group: 2 }
 #context_unpinTab { -moz-box-ordinal-group: 3 }
