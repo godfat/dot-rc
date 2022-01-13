@@ -2,7 +2,7 @@
 
 port -N selfupdate
 
-port -N install coreutils findutils fish git socat vim ripgrep htop
+port -N install coreutils findutils fish git socat vim ripgrep shellcheck htop
 
 port -N install ruby30 +doc
 port -N select --set ruby ruby30
