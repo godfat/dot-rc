@@ -21,7 +21,7 @@ notification[value="keyword-uri-fixup"] { display: none !important; }
 #context_closeTabOptions,
 #context_closeTabsToTheEnd,
 #context_closeOtherTabs,
-/* Tab bar menu */
+.share-tab-url-item,
 #toolbar-context-reloadAllTabs,
 #toolbar-context-bookmarkAllTabs,
 /* Page context menu */
