@@ -7,6 +7,5 @@ bin/ignore-*
 .config/fish/fish_history
 .config/rib/history.rb
 .config/irb/irb_history
-.config/gtk-2.0
-.config/inkscape
+.config/asciinema/
 .config/iterm2/
