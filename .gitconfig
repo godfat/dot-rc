@@ -24,7 +24,6 @@
 [diff]
   renames = copy
   algorithm = patience
-  wordregex = \\w+|\\S
 [merge]
   log = true
 [rebase]
