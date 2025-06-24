@@ -1,5 +1,6 @@
 {
   "breadcrumbs.enabled": false,
+  "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, monospace",
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
