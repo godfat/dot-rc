@@ -354,12 +354,6 @@
     "description": "elsif ...",
     "scope": "source.ruby"
   },
-  "_e": {
-    "prefix": "end",
-    "body": "__END__\n",
-    "description": "__END__",
-    "scope": "source.ruby"
-  },
   "fin": {
     "prefix": "fin",
     "body": "find { |${1:e}| $0 }",
