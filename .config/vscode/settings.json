@@ -1,7 +1,15 @@
 {
+  "breadcrumbs.enabled": false,
   "editor.formatOnSave": true,
-  "workbench.colorTheme": "Twilight",
+  "editor.minimap.enabled": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.quickSuggestions": false,
+  "editor.renderWhitespace": "all",
+  "editor.tabCompletion": "onlySnippets",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
   "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Twilight",
   "workbench.startupEditor": "none",
   "security.workspace.trust.startupPrompt": "never",
 }

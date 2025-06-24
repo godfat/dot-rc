@@ -6,13 +6,19 @@
   "engines": {
     "vscode": "^1.0.0"
   },
-  "categories": ["Themes"],
+  "categories": ["Themes", "Snippets"],
   "contributes": {
     "themes": [
       {
         "label": "Twilight",
         "uiTheme": "vs-dark",
         "path": "./twilight.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ruby",
+        "path": "./snippets-ruby.json"
       }
     ]
   }
