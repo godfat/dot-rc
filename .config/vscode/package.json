@@ -7,6 +7,7 @@
     "vscode": "^1.0.0"
   },
   "categories": ["Themes", "Snippets"],
+  "main": "./text-completion",
   "contributes": {
     "themes": [
       {
@@ -23,7 +24,7 @@
     ],
     "keybindings": [
       {
-        "command": "anotherWordCompletion.cycle",
+        "command": "twilightTextCompletion.cycle",
         "key": "escape",
         "when": "editorTextFocus && !editorHasMultiSelection && !editorReadOnly"
       }
