@@ -1,0 +1,19 @@
+{
+  "name": "twilight",
+  "displayName": "Twilight",
+  "description": "Classic Twilight dark theme for VS Code",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Twilight",
+        "uiTheme": "vs-dark",
+        "path": "./twilight.json"
+      }
+    ]
+  }
+}
