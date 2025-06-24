@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "workbench.colorTheme": "Twilight",
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.startupPrompt": "never",
+}
