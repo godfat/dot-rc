@@ -20,6 +20,13 @@
         "language": "ruby",
         "path": "./snippets-ruby.json"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "anotherWordCompletion.cycle",
+        "key": "escape",
+        "when": "editorTextFocus && !editorHasMultiSelection && !editorReadOnly"
+      }
     ]
   }
 }
