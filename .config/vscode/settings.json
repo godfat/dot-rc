@@ -10,6 +10,8 @@
   "editor.tabCompletion": "onlySnippets",
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "none",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
@@ -21,5 +23,5 @@
   "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "none"
 }
