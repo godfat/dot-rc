@@ -27,6 +27,11 @@
   "window.zoomLevel": 3,
   "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#F8F8F8",
+    "editorBracketHighlight.foreground2": "#F8F8F8",
+    "editorBracketHighlight.foreground3": "#F8F8F8"
+  },
   "workbench.colorTheme": "Twilight",
   "workbench.startupEditor": "none"
 }
