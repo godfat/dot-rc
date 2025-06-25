@@ -12,6 +12,9 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
+  "scm.diffDecorationsGutterPattern": {
+    "modified": false
+  },
   "security.workspace.trust.enabled": false,
   "window.zoomLevel": 3,
   "window.zoomPerWindow": false,
