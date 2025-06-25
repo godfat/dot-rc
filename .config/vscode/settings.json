@@ -7,6 +7,7 @@
   "editor.occurrencesHighlight": "off",
   "editor.quickSuggestions": false,
   "editor.renderWhitespace": "all",
+  "editor.rulers": [78],
   "editor.tabCompletion": "onlySnippets",
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
