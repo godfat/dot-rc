@@ -5,7 +5,11 @@
   "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
-  "editor.quickSuggestions": false,
+  "editor.quickSuggestions": {
+    "comments": "off",
+    "strings": "off",
+    "other": "off"
+  },
   "editor.renderWhitespace": "all",
   "editor.rulers": [78],
   "editor.tabCompletion": "onlySnippets",
