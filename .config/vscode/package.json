@@ -7,6 +7,9 @@
     "vscode": "^1.0.0"
   },
   "categories": ["Themes", "Snippets"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./text-completion",
   "contributes": {
     "themes": [
