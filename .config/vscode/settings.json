@@ -10,6 +10,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
   "files.insertFinalNewline": true,
+  "git.openRepositoryInParentFolders": "always",
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
   "workbench.startupEditor": "none",
