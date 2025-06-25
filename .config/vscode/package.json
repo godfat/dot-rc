@@ -31,6 +31,13 @@
         "key": "escape",
         "when": "editorTextFocus && !editorHasMultiSelection && !editorReadOnly"
       }
+    ],
+    "commands": [
+      {
+        "command": "twilightTextCompletion.cycle",
+        "title": "Text complete",
+        "category": "Twilight"
+      }
     ]
   }
 }
