@@ -1,7 +1,6 @@
 {
   "breadcrumbs.enabled": false,
   "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, monospace",
-  "editor.formatOnSave": true,
   "editor.hover.enabled": false,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
@@ -11,6 +10,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "always",
   "security.workspace.trust.enabled": false,
   "window.zoomLevel": 3,
