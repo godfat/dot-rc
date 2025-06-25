@@ -12,5 +12,5 @@
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
   "workbench.startupEditor": "none",
-  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.enabled": false,
 }
