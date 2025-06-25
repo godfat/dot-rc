@@ -2,6 +2,7 @@
   "breadcrumbs.enabled": false,
   "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, monospace",
   "editor.hover.enabled": false,
+  "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
   "editor.quickSuggestions": false,
