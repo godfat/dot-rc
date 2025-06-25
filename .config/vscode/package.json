@@ -29,7 +29,7 @@
       {
         "command": "twilightTextCompletion.cycle",
         "key": "escape",
-        "when": "editorTextFocus && !editorHasMultiSelection && !editorReadOnly"
+        "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly"
       }
     ],
     "commands": [
