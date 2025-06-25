@@ -7,7 +7,7 @@ let isInCyclingMode = false;
 let originalState = null;
 
 function activate(context) {
-  const disposable = vscode.commands.registerCommand('anotherWordCompletion.cycle', () => {
+  const disposable = vscode.commands.registerCommand('twilightTextCompletion.cycle', () => {
     const textEditor = vscode.window.activeTextEditor;
     if (!textEditor) {
       return;
