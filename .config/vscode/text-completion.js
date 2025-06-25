@@ -170,7 +170,7 @@ function getWordSuggestions(textEditor, currentWord) {
     const word = match[0];
 
     // Skip if same as current word or doesn't start with current word
-    if (word === currentWord || !word.toLowerCase().startsWith(currentWord.toLowerCase())) {
+    if (word === currentWord || !word.startsWith(currentWord)) {
       continue;
     }
 
@@ -184,7 +184,7 @@ function getWordSuggestions(textEditor, currentWord) {
     // Calculate distance from current position
     const matchPosition = document.positionAt(match.index);
     const distance = Math.abs(matchPosition.line - currentPosition.line) +
-            Math.abs(matchPosition.character - currentPosition.character);
+      Math.abs(matchPosition.character - currentPosition.character);
 
     suggestions.push({ word, distance });
   }
