@@ -11,8 +11,10 @@
   "editor.unicodeHighlight.nonBasicASCII": false,
   "files.insertFinalNewline": true,
   "git.openRepositoryInParentFolders": "always",
+  "security.workspace.trust.enabled": false,
+  "window.zoomLevel": 3,
+  "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
   "workbench.startupEditor": "none",
-  "security.workspace.trust.enabled": false,
 }
