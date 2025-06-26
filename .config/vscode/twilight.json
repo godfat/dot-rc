@@ -119,22 +119,11 @@
       "name": "Function Call",
       "scope": [
         "meta.function-call entity.name.function",
-        "meta.function-call.generic entity.name.function",
+        "meta.method-call entity.name.function",
         "variable.function"
       ],
       "settings": {
-        "foreground": "#FFFFFF"
-      }
-    },
-    {
-      "name": "Method Call",
-      "scope": [
-        "meta.method-call entity.name.function",
-        "meta.method-call.java entity.name.function",
-        "meta.method-call.js entity.name.function"
-      ],
-      "settings": {
-        "foreground": "#FFFFFF"
+        "foreground": "#F8F8F8"
       }
     },
     {
