@@ -62,9 +62,21 @@
   },
   "tokenColors": [
     {
-      "name": "Punctuations",
+      "name": "Commons",
       "scope": [
-        "punctuation.separator"
+        "punctuation.separator",
+
+        "meta.function-call entity.name.function",
+        "meta.method-call entity.name.function",
+        "variable.function",
+
+        "variable.other.property",
+        "variable.other.object.property",
+        "support.variable.property",
+
+        "meta.property-value",
+        "support.constant.property-value",
+        "constant.other.color"
       ],
       "settings": {
         "foreground": "#F8F8F8"
@@ -123,17 +135,6 @@
       }
     },
     {
-      "name": "Function Call",
-      "scope": [
-        "meta.function-call entity.name.function",
-        "meta.method-call entity.name.function",
-        "variable.function"
-      ],
-      "settings": {
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
       "name": "Built-in Functions",
       "scope": [
         "support.function",
@@ -166,17 +167,6 @@
       }
     },
     {
-      "name": "Property",
-      "scope": [
-        "variable.other.property",
-        "variable.other.object.property",
-        "support.variable.property"
-      ],
-      "settings": {
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
       "name": "Tag",
       "scope": [
         "entity.name.tag",
@@ -193,22 +183,6 @@
       ],
       "settings": {
         "foreground": "#F9EE98"
-      }
-    },
-    {
-      "name": "Invalid",
-      "scope": "invalid",
-      "settings": {
-        "background": "#D2A8A1",
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
-      "name": "Invalid deprecated",
-      "scope": "invalid.deprecated",
-      "settings": {
-        "background": "#D2A8A1",
-        "foreground": "#F8F8F8"
       }
     },
     {
@@ -295,17 +269,6 @@
       ],
       "settings": {
         "foreground": "#F9EE98"
-      }
-    },
-    {
-      "name": "CSS Property Value",
-      "scope": [
-        "meta.property-value",
-        "support.constant.property-value",
-        "constant.other.color"
-      ],
-      "settings": {
-        "foreground": "#F8F8F8"
       }
     },
     {
