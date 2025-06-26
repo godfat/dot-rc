@@ -6,3 +6,4 @@
   * Improved and rewritten by Claude guided by me based on <https://github.com/getogrand/another-word-completion/commit/691badc8894e821258cfe0bbab1df0aaeb89e5fe>
   * No longer uses any dependencies
   * No longer pollutes the undo history with cycling by the concept of committing when user moves the cursor
+* Use [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby) to recognize support (built-in) methods ands keywords.
