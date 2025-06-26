@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": false,
   "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, monospace",
+  "editor.formatOnPaste": true,
   "editor.hover.enabled": false,
   "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
