@@ -116,10 +116,7 @@
       "name": "Definition",
       "scope": [
         "entity.name.function",
-        "meta.function entity.name.function",
-        "meta.method entity.name.function",
-        "meta.module entity.name.type",
-        "meta.class entity.name.type"
+        "entity.name.type"
       ],
       "settings": {
         "foreground": "#9B703F"
@@ -149,8 +146,6 @@
     {
       "name": "Class",
       "scope": [
-        "entity.name.class",
-        "entity.name.type",
         "support.type",
         "support.class",
         "meta.class",
