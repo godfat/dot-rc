@@ -201,7 +201,8 @@
       "name": "Library class/type",
       "scope": [
         "support.type",
-        "support.class"
+        "support.class",
+        "new.expr meta.function-call entity.name.function"
       ],
       "settings": {
         "foreground": "#9B859D"
