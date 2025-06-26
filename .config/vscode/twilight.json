@@ -62,10 +62,18 @@
   },
   "tokenColors": [
     {
+      "name": "Punctuations",
+      "scope": [
+        "punctuation.separator"
+      ],
+      "settings": {
+        "foreground": "#F8F8F8"
+      }
+    },
+    {
       "name": "Comment",
       "scope": "comment",
       "settings": {
-        "fontStyle": "italic",
         "foreground": "#5F5A60"
       }
     },
@@ -105,11 +113,13 @@
       }
     },
     {
-      "name": "Function Definition",
+      "name": "Definition",
       "scope": [
         "entity.name.function",
         "meta.function entity.name.function",
-        "meta.method entity.name.function"
+        "meta.method entity.name.function",
+        "meta.module entity.name.type",
+        "meta.class entity.name.type"
       ],
       "settings": {
         "foreground": "#9B703F"
@@ -141,10 +151,13 @@
       "scope": [
         "entity.name.class",
         "entity.name.type",
-        "support.class"
+        "support.type",
+        "support.class",
+        "meta.class",
+        "new.expr meta.function-call entity.name.function"
       ],
       "settings": {
-        "foreground": "#F9EE98"
+        "foreground": "#9B859D"
       }
     },
     {
@@ -184,17 +197,6 @@
       ],
       "settings": {
         "foreground": "#F9EE98"
-      }
-    },
-    {
-      "name": "Library class/type",
-      "scope": [
-        "support.type",
-        "support.class",
-        "new.expr meta.function-call entity.name.function"
-      ],
-      "settings": {
-        "foreground": "#9B859D"
       }
     },
     {
