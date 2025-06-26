@@ -12,6 +12,7 @@
   },
   "editor.renderWhitespace": "all",
   "editor.rulers": [78],
+  "editor.stickyScroll.enabled": false,
   "editor.tabCompletion": "onlySnippets",
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
