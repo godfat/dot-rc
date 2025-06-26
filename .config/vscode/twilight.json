@@ -169,6 +169,7 @@
       "name": "Property",
       "scope": [
         "variable.other.property",
+        "variable.other.object.property",
         "support.variable.property"
       ],
       "settings": {
