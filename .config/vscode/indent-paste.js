@@ -12,9 +12,21 @@ async function activate() {
   }
 
   const document = editor.document;
-  const selection = editor.selection;
-  const position = selection.active;
+  let selection = editor.selection;
 
+  // If there's a selection, delete it first without creating an undo stop
+  const hadSelection = !selection.isEmpty;
+  if (hadSelection) {
+    await editor.edit(editBuilder => {
+      editBuilder.delete(selection);
+    }, { undoStopBefore: true, undoStopAfter: false });
+
+    // Update selection after deletion
+    selection = editor.selection;
+  }
+
+  // Now proceed with paste logic
+  const position = selection.active;
   const currentLine = document.lineAt(position.line);
   const lineText = currentLine.text;
 
@@ -22,12 +34,8 @@ async function activate() {
   if (lineText.trim() !== '') {
     // Normal paste on non-empty line
     await editor.edit(editBuilder => {
-      if (selection.isEmpty) {
-        editBuilder.insert(position, clipboardText);
-      } else {
-        editBuilder.replace(selection, clipboardText);
-      }
-    });
+      editBuilder.insert(position, clipboardText);
+    }, { undoStopBefore: !hadSelection, undoStopAfter: true });
     return;
   }
 
@@ -52,7 +60,7 @@ async function activate() {
       new vscode.Position(position.line, lineText.length)
     );
     editBuilder.replace(fullLineRange, newText);
-  });
+  }, { undoStopBefore: !hadSelection, undoStopAfter: true });
 
   // Move cursor to end of pasted content
   const lastLineNum = position.line + adjustedLines.length - 1;
