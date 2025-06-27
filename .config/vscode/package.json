@@ -32,6 +32,14 @@
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor && !suggestWidgetVisible"
       },
       {
+        "command": "-editor.action.clipboardPasteAction",
+        "key": "cmd+v"
+      },
+      {
+        "command": "twilight.paste",
+        "key": "cmd+v"
+      },
+      {
         "command": "workbench.action.quickOpen",
         "key": "cmd+t"
       },
