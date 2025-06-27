@@ -27,14 +27,14 @@
     ],
     "keybindings": [
       {
-        "command": "twilightTextCompletion.cycle",
+        "command": "twilight.compltetion.cycle",
         "key": "escape",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor"
       }
     ],
     "commands": [
       {
-        "command": "twilightTextCompletion.cycle",
+        "command": "twilight.compltetion.cycle",
         "title": "Text complete",
         "category": "Twilight"
       },
