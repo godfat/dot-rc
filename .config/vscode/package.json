@@ -37,6 +37,11 @@
         "command": "twilightTextCompletion.cycle",
         "title": "Text complete",
         "category": "Twilight"
+      },
+      {
+        "command": "twilight.paste",
+        "title": "Indent paste",
+        "category": "Twilight"
       }
     ]
   }
