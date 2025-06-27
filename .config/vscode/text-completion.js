@@ -51,20 +51,20 @@ function startCycling(editor) {
   });
 
   // Apply first suggestion
-  applySuggestion(textEditor, suggestions[currentSuggestionIndex]);
+  applySuggestion(editor, suggestions[currentSuggestionIndex]);
 }
 
-function cycleToNext(textEditor) {
+function cycleToNext(editor) {
   if (!isInCyclingMode || suggestions.length === 0) {
     return;
   }
 
   currentSuggestionIndex = (currentSuggestionIndex + 1) % suggestions.length;
-  applySuggestion(textEditor, suggestions[currentSuggestionIndex]);
+  applySuggestion(editor, suggestions[currentSuggestionIndex]);
 }
 
-function applySuggestion(textEditor, suggestionWord) {
-  const currentWordRange = getCurrentWordRange(textEditor);
+function applySuggestion(editor, suggestionWord) {
+  const currentWordRange = getCurrentWordRange(editor);
   if (!currentWordRange) {
     return;
   }
@@ -76,7 +76,7 @@ function applySuggestion(textEditor, suggestionWord) {
     selectionListener = null;
   }
 
-  textEditor.edit(edit => {
+  editor.edit(edit => {
     edit.replace(currentWordRange, suggestionWord);
   }, {
     undoStopBefore: false,
