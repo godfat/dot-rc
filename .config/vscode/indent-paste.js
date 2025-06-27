@@ -31,7 +31,7 @@ async function activate() {
     return;
   }
 
-  // Smart indentation paste
+  // Smart indentation paste (on empty line)
   const targetIndent = lineText.substring(0, position.character);
   const lines = clipboardText.split(/\r?\n/);
 
@@ -85,23 +85,50 @@ function findBaseIndentation(lines) {
     return { baseIndent: '', firstNonEmptyIndex, firstLineHasIndent };
   }
 
-  // Calculate minimum indentation
-  let minIndentLength = Infinity;
+  // Find the common prefix (handles both tabs and spaces)
+  let baseIndent = '';
 
   if (firstLineHasIndent) {
-    // If first line has indentation, include it in the calculation
-    minIndentLength = getLineIndentation(lines[firstNonEmptyIndex]).length;
+    // Start with first line's indentation
+    baseIndent = getLineIndentation(lines[firstNonEmptyIndex]);
   } else {
-    // If first line has no indentation, find min from the rest
+    // Find shortest indentation from other lines
+    let shortestIndent = null;
     for (let i = firstNonEmptyIndex + 1; i < lines.length; i++) {
       if (lines[i].trim() !== '') {
-        const indentLength = getLineIndentation(lines[i]).length;
-        minIndentLength = Math.min(minIndentLength, indentLength);
+        const indent = getLineIndentation(lines[i]);
+        if (shortestIndent === null || indent.length < shortestIndent.length) {
+          shortestIndent = indent;
+        }
+      }
+    }
+    baseIndent = shortestIndent || '';
+  }
+
+  // Verify that all non-empty lines start with this base indent
+  // and find the true common prefix
+  for (let i = firstNonEmptyIndex; i < lines.length; i++) {
+    if (lines[i].trim() !== '') {
+      const lineIndent = getLineIndentation(lines[i]);
+
+      // Skip first line if it has no indentation
+      if (!firstLineHasIndent && i === firstNonEmptyIndex) {
+        continue;
+      }
+
+      // Find common prefix between baseIndent and this line's indent
+      let commonLength = 0;
+      while (commonLength < baseIndent.length &&
+             commonLength < lineIndent.length &&
+             baseIndent[commonLength] === lineIndent[commonLength]) {
+        commonLength++;
+      }
+
+      if (commonLength < baseIndent.length) {
+        baseIndent = baseIndent.substring(0, commonLength);
       }
     }
   }
-
-  const baseIndent = minIndentLength === Infinity ? '' : ' '.repeat(minIndentLength);
 
   return { baseIndent, firstNonEmptyIndex, firstLineHasIndent };
 }
