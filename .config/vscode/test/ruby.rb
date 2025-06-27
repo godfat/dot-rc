@@ -10,7 +10,8 @@ module Box
     extend Forwardable
 
     def initialize(a = 1, b: nil, c: :symbol)
-      super()
+      super({ test: :test })
+      { "test" => "test" }
 
       %i[symbol].each do |symbol|
       end
