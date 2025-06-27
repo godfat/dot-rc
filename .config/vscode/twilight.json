@@ -69,8 +69,8 @@
         "meta.function-call entity.name.function",
         "meta.method-call entity.name.function",
 
-        "meta.object-literal.key",
         "meta.property-value",
+        "support.variable",
         "variable.other.object.property"
       ],
       "settings": {
@@ -92,7 +92,8 @@
         "keyword",
         "keyword.control",
         "keyword.operator",
-        "entity.name.tag"
+        "entity.name.tag",
+        "storage.type"
       ],
       "settings": {
         "foreground": "#CDA869"
@@ -153,6 +154,7 @@
         "support.type",
         "support.class",
         "meta.class",
+        "meta.object-literal",
         "new.expr meta.function-call entity.name.function"
       ],
       "settings": {
@@ -162,8 +164,7 @@
     {
       "name": "Variable",
       "scope": [
-        "variable",
-        "support.type.property-name"
+        "variable"
       ],
       "settings": {
         "foreground": "#7587A6"
