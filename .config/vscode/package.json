@@ -1,7 +1,7 @@
 {
   "name": "twilight",
   "displayName": "Twilight",
-  "description": "Classic Twilight dark theme for VS Code",
+  "description": "TextMate Twilight dark theme and other random things",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.0.0"
