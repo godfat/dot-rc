@@ -10,7 +10,7 @@
   "activationEvents": [
     "onStartupFinished"
   ],
-  "main": "./text-completion",
+  "main": "./main.js",
   "contributes": {
     "themes": [
       {

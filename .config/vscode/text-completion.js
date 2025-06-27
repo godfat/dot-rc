@@ -6,21 +6,17 @@ let selectionListener = null;
 let isInCyclingMode = false;
 let originalState = null;
 
-function activate(context) {
-  const disposable = vscode.commands.registerCommand('twilightTextCompletion.cycle', () => {
-    const textEditor = vscode.window.activeTextEditor;
-    if (!textEditor) {
-      return;
-    }
+function activate() {
+  const textEditor = vscode.window.activeTextEditor;
+  if (!textEditor) {
+    return;
+  }
 
-    if (!isInCyclingMode) {
-      startCycling(textEditor);
-    } else {
-      cycleToNext(textEditor);
-    }
-  });
-
-  context.subscriptions.push(disposable);
+  if (!isInCyclingMode) {
+    startCycling(textEditor);
+  } else {
+    cycleToNext(textEditor);
+  }
 }
 
 function startCycling(textEditor) {
