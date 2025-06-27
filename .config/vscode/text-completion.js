@@ -7,25 +7,25 @@ let isInCyclingMode = false;
 let originalState = null;
 
 function activate() {
-  const textEditor = vscode.window.activeTextEditor;
-  if (!textEditor) {
+  const editor = vscode.window.activeTextEditor;
+  if (!editor) {
     return;
   }
 
   if (!isInCyclingMode) {
-    startCycling(textEditor);
+    startCycling(editor);
   } else {
-    cycleToNext(textEditor);
+    cycleToNext(editor);
   }
 }
 
-function startCycling(textEditor) {
-  const currentWordRange = getCurrentWordRange(textEditor);
+function startCycling(editor) {
+  const currentWordRange = getCurrentWordRange(editor);
   if (!currentWordRange) {
     return;
   }
 
-  const currentWord = textEditor.document.getText(currentWordRange);
+  const currentWord = editor.document.getText(currentWordRange);
   if (!currentWord) {
     return;
   }
@@ -37,7 +37,7 @@ function startCycling(textEditor) {
   };
 
   // Get suggestions
-  suggestions = getWordSuggestions(textEditor, currentWord);
+  suggestions = getWordSuggestions(editor, currentWord);
   if (suggestions.length === 0) {
     return;
   }
