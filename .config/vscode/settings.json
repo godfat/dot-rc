@@ -26,6 +26,7 @@
     "modified": false
   },
   "security.workspace.trust.enabled": false,
+  "telemetry.telemetryLevel": "off",
   "window.zoomLevel": 3,
   "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
