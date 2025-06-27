@@ -4,6 +4,9 @@
   * Imported from <https://github.com/magicwhite/ruby-snippet/blob/537157ef3a1c5b9c6f74b0e2d4d545371a6d549d/snippets/snippets.json>
 * `text-completion.js`
   * Improved and rewritten by Claude guided by me based on <https://github.com/getogrand/another-word-completion/commit/691badc8894e821258cfe0bbab1df0aaeb89e5fe>
-  * No longer uses any dependencies
-  * No longer pollutes the undo history with cycling by the concept of committing when user moves the cursor
+  * No longer uses any dependencies.
+  * No longer pollutes the undo history with cycling by the concept of committing when user moves the cursor.
+* `indent-paste.js`
+  * Written by Claude Opus 4 with a lot of back and forth with my tests and requests.
+  * The main idea is to paste snippets with correct indentation, at the same time with a single undo point. Paste on format doesn't work for all languages, and it creates 2 undo points.
 * Use [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby) to recognize support (built-in) methods ands keywords.
