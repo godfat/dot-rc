@@ -30,6 +30,14 @@
         "command": "twilight.compltetion.cycle",
         "key": "escape",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor"
+      },
+      {
+        "command": "workbench.action.quickOpen",
+        "key": "cmd+t"
+      },
+      {
+        "command": "workbench.action.showCommands",
+        "key": "shift+cmd+c"
       }
     ],
     "commands": [
