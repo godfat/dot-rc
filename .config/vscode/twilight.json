@@ -114,7 +114,9 @@
         "constant.numeric",
         "constant.language",
         "constant.character",
-        "constant.other"
+        "constant.other",
+        "support.constant",
+        "variable.language"
       ],
       "settings": {
         "foreground": "#CF6A4C"
@@ -125,7 +127,8 @@
       "scope": [
         "entity.name.function",
         "meta.module entity.name.type",
-        "meta.class entity.name.type"
+        "meta.class entity.name.type",
+        "support"
       ],
       "settings": {
         "foreground": "#9B703F"
@@ -136,7 +139,8 @@
       "scope": [
         "support.function",
         "support.function.builtin",
-        "support.constant.property-value"
+        "support.constant.property-value",
+        "entity.other.attribute-name"
       ],
       "settings": {
         "foreground": "#F9EE98"
@@ -163,15 +167,6 @@
       ],
       "settings": {
         "foreground": "#7587A6"
-      }
-    },
-    {
-      "name": "Tag Attribute",
-      "scope": [
-        "entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#F9EE98"
       }
     },
     {
@@ -217,13 +212,6 @@
       }
     },
     {
-      "name": "Escape Characters",
-      "scope": "constant.character.escape",
-      "settings": {
-        "foreground": "#CF6A4C"
-      }
-    },
-    {
       "name": "Embedded",
       "scope": [
         "punctuation.section.embedded",
@@ -231,24 +219,6 @@
       ],
       "settings": {
         "foreground": "#DAEFA3"
-      }
-    },
-    {
-      "name": "Built-in constant",
-      "scope": [
-        "constant.language",
-        "support.constant",
-        "variable.language"
-      ],
-      "settings": {
-        "foreground": "#CF6A4C"
-      }
-    },
-    {
-      "name": "Support",
-      "scope": "support",
-      "settings": {
-        "foreground": "#9B703F"
       }
     },
     {
