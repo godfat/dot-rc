@@ -33,11 +33,13 @@
       },
       {
         "command": "-editor.action.clipboardPasteAction",
-        "key": "cmd+v"
+        "key": "cmd+v",
+        "when": "editorTextFocus"
       },
       {
         "command": "twilight.paste",
-        "key": "cmd+v"
+        "key": "cmd+v",
+        "when": "editorTextFocus"
       },
       {
         "command": "workbench.action.quickOpen",
