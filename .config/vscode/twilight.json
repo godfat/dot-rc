@@ -64,6 +64,7 @@
     {
       "name": "Commons",
       "scope": [
+        "punctuation.definition",
         "punctuation.separator",
 
         "meta.function-call entity.name.function",
