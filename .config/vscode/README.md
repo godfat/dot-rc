@@ -10,3 +10,4 @@
   * Written by Claude Opus 4 with a lot of back and forth with my tests and requests.
   * The main idea is to paste snippets with correct indentation, at the same time with a single undo point. Paste on format doesn't work for all languages, and it creates 2 undo points.
 * Use [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby) to recognize support (built-in) methods ands keywords.
+* Use [NGINX Configuration Language Support](https://marketplace.visualstudio.com/items?itemName=ahmadalli.vscode-nginx-conf) to recognize Nginx config.

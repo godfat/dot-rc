@@ -64,7 +64,6 @@
     {
       "name": "Commons",
       "scope": [
-        "punctuation.definition",
         "punctuation.separator",
 
         "meta.function-call entity.name.function",
@@ -73,8 +72,7 @@
         "meta.object-literal.key",
         "meta.property-value",
         "variable.other.object.property",
-        "support.constant.property-value",
-        "constant.other.color"
+        "support.constant.property-value"
       ],
       "settings": {
         "foreground": "#F8F8F8"
@@ -83,8 +81,7 @@
     {
       "name": "Comment",
       "scope": [
-        "comment",
-        "punctuation.definition.comment"
+        "comment"
       ],
       "settings": {
         "foreground": "#5F5A60"
