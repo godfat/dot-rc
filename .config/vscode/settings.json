@@ -35,5 +35,6 @@
     "editorBracketHighlight.foreground3": "#F8F8F8"
   },
   "workbench.colorTheme": "Twilight",
+  "workbench.editor.empty.hint": "hidden",
   "workbench.startupEditor": "none"
 }
