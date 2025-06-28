@@ -165,6 +165,7 @@
       "name": "Variable",
       "scope": [
         "variable",
+        "meta.diff.index",
         "meta.structure meta.structure support.type"
       ],
       "settings": {
@@ -172,38 +173,33 @@
       }
     },
     {
-      "name": "Diff Header",
+      "name": "Diff deleted",
       "scope": [
-        "meta.diff",
+        "markup.deleted",
+        "meta.diff.header.from-file"
+      ],
+      "settings": {
+        "foreground": "#F97A7A"
+      }
+    },
+    {
+      "name": "Diff inserted",
+      "scope": [
+        "markup.inserted",
+        "meta.diff.header.to-file"
+      ],
+      "settings": {
+        "foreground": "#7FD987"
+      }
+    },
+    {
+      "name": "Diff changed",
+      "scope": [
+        "markup.changed",
         "meta.diff.header"
       ],
       "settings": {
-        "background": "#0E2231",
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
-      "name": "Diff Deleted",
-      "scope": "markup.deleted",
-      "settings": {
-        "background": "#420E09",
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
-      "name": "Diff Inserted",
-      "scope": "markup.inserted",
-      "settings": {
-        "background": "#253B22",
-        "foreground": "#F8F8F8"
-      }
-    },
-    {
-      "name": "Diff Changed",
-      "scope": "markup.changed",
-      "settings": {
-        "background": "#4A410D",
-        "foreground": "#F8F8F8"
+        "foreground": "#F9EE98"
       }
     },
     {
