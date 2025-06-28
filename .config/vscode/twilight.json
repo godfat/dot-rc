@@ -173,6 +173,23 @@
       }
     },
     {
+      "name": "Regular Expressions",
+      "scope": "string.regexp",
+      "settings": {
+        "foreground": "#E9C062"
+      }
+    },
+    {
+      "name": "Embedded",
+      "scope": [
+        "punctuation.section.embedded",
+        "variable.interpolation"
+      ],
+      "settings": {
+        "foreground": "#DAEFA3"
+      }
+    },
+    {
       "name": "Diff deleted",
       "scope": [
         "markup.deleted",
@@ -200,23 +217,6 @@
       ],
       "settings": {
         "foreground": "#F9EE98"
-      }
-    },
-    {
-      "name": "Regular Expressions",
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "#E9C062"
-      }
-    },
-    {
-      "name": "Embedded",
-      "scope": [
-        "punctuation.section.embedded",
-        "variable.interpolation"
-      ],
-      "settings": {
-        "foreground": "#DAEFA3"
       }
     }
   ]
