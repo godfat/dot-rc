@@ -87,6 +87,59 @@
       }
     },
     {
+      "name": "Literal",
+      "scope": [
+        "constant.numeric",
+        "constant.character",
+        "constant.language",
+        "constant.other",
+        "support.constant",
+        "variable.language"
+      ],
+      "settings": {
+        "foreground": "#CF6A4C"
+      }
+    },
+    {
+      "name": "String",
+      "scope": [
+        "string"
+      ],
+      "settings": {
+        "foreground": "#8F9D6A"
+      }
+    },
+    {
+      "name": "Regular Expressions",
+      "scope": [
+        "string.regexp"
+      ],
+      "settings": {
+        "foreground": "#E9C062"
+      }
+    },
+    {
+      "name": "Interpolation",
+      "scope": [
+        "punctuation.section.embedded",
+        "variable.interpolation"
+      ],
+      "settings": {
+        "foreground": "#DAEFA3"
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": [
+        "variable",
+        "meta.diff.index",
+        "meta.structure meta.structure support.type"
+      ],
+      "settings": {
+        "foreground": "#7587A6"
+      }
+    },
+    {
       "name": "Keyword",
       "scope": [
         "keyword",
@@ -100,27 +153,15 @@
       }
     },
     {
-      "name": "String",
+      "name": "Built-in functions",
       "scope": [
-        "string",
-        "string.quoted"
+        "support.function",
+        "support.function.builtin",
+        "support.constant.property-value",
+        "entity.other.attribute-name"
       ],
       "settings": {
-        "foreground": "#8F9D6A"
-      }
-    },
-    {
-      "name": "Number",
-      "scope": [
-        "constant.numeric",
-        "constant.language",
-        "constant.character",
-        "constant.other",
-        "support.constant",
-        "variable.language"
-      ],
-      "settings": {
-        "foreground": "#CF6A4C"
+        "foreground": "#F9EE98"
       }
     },
     {
@@ -136,18 +177,6 @@
       }
     },
     {
-      "name": "Built-in Functions",
-      "scope": [
-        "support.function",
-        "support.function.builtin",
-        "support.constant.property-value",
-        "entity.other.attribute-name"
-      ],
-      "settings": {
-        "foreground": "#F9EE98"
-      }
-    },
-    {
       "name": "Class",
       "scope": [
         "entity.name.type",
@@ -159,34 +188,6 @@
       ],
       "settings": {
         "foreground": "#9B859D"
-      }
-    },
-    {
-      "name": "Variable",
-      "scope": [
-        "variable",
-        "meta.diff.index",
-        "meta.structure meta.structure support.type"
-      ],
-      "settings": {
-        "foreground": "#7587A6"
-      }
-    },
-    {
-      "name": "Regular Expressions",
-      "scope": "string.regexp",
-      "settings": {
-        "foreground": "#E9C062"
-      }
-    },
-    {
-      "name": "Embedded",
-      "scope": [
-        "punctuation.section.embedded",
-        "variable.interpolation"
-      ],
-      "settings": {
-        "foreground": "#DAEFA3"
       }
     },
     {
