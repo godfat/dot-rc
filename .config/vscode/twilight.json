@@ -164,7 +164,8 @@
     {
       "name": "Variable",
       "scope": [
-        "variable"
+        "variable",
+        "meta.structure meta.structure support.type"
       ],
       "settings": {
         "foreground": "#7587A6"
@@ -220,33 +221,6 @@
       ],
       "settings": {
         "foreground": "#DAEFA3"
-      }
-    },
-    {
-      "name": "JSON Key - Level 0",
-      "scope": [
-        "source.json meta.structure.dictionary.json support.type.property-name.json"
-      ],
-      "settings": {
-        "foreground": "#F9EE98"
-      }
-    },
-    {
-      "name": "JSON Key - Level 1",
-      "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-      ],
-      "settings": {
-        "foreground": "#CDA869"
-      }
-    },
-    {
-      "name": "JSON Key - Level 2",
-      "scope": [
-        "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
-      ],
-      "settings": {
-        "foreground": "#9B859D"
       }
     }
   ]
