@@ -18,6 +18,9 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
   "editor.wordWrap": "wordWrapColumn",
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn"
+  },
   "editor.wrappingIndent": "none",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
