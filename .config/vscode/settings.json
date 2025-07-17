@@ -30,6 +30,7 @@
   },
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
+  "update.mode": "start",
   "window.zoomLevel": 3,
   "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
