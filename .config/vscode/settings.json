@@ -30,6 +30,7 @@
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
+  "search.searchOnType": false,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
   "update.mode": "start",
