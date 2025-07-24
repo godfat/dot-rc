@@ -22,6 +22,8 @@
     "editorGutter.modifiedBackground": "#F9EE98",
     "editorGutter.addedBackground": "#7FD987",
     "editorGutter.deletedBackground": "#F97A7A",
+    "editorUnnecessaryCode.border": "#F97A7A",
+    "editorUnnecessaryCode.opacity": "#000000FF",
     "sideBar.background": "#1A1A1A",
     "sideBar.foreground": "#F8F8F8",
     "sideBarSectionHeader.background": "#2A2A2A",
