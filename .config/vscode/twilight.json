@@ -17,6 +17,7 @@
     "editorIndentGuide.activeBackground": "#FFFFFF40",
     "editorLineNumber.foreground": "#5F5A60",
     "editorLineNumber.activeForeground": "#A7A7A7",
+    "editorGroupHeader.tabsBackground": "#0F0F0F",
     "editorGutter.background": "#141414",
     "editorGutter.modifiedBackground": "#F9EE98",
     "editorGutter.addedBackground": "#7FD987",
