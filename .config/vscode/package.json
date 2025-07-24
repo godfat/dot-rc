@@ -48,6 +48,26 @@
       {
         "command": "workbench.action.showCommands",
         "key": "shift+cmd+c"
+      },
+      {
+        "key": "ctrl+left",
+        "command": "cursorWordPartLeft",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+right",
+        "command": "cursorWordPartRight",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+left",
+        "command": "cursorWordPartLeftSelect",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+shift+right",
+        "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus"
       }
     ],
     "commands": [
