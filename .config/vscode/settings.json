@@ -40,5 +40,6 @@
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false,
   "workbench.startupEditor": "none"
 }
