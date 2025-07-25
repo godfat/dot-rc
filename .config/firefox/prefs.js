@@ -13,6 +13,7 @@ user_pref("browser.tabs.hoverPreview.enabled", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
+user_pref("browser.urlbar.scotchBonnet.enableOverride", false);
 user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.clipboard", false);
 user_pref("browser.urlbar.suggest.engines", false);
