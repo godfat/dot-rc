@@ -21,6 +21,7 @@ user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("editor.word_select.delete_space_after_doubleclick_selection", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("general.smoothScroll", false);
 user_pref("mousewheel.acceleration.factor", 0);
 user_pref("privacy.trackingprotection.enabled", true);
