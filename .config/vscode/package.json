@@ -68,6 +68,10 @@
         "key": "ctrl+shift+right",
         "command": "cursorWordPartRightSelect",
         "when": "textInputFocus"
+      },
+      {
+          "key": "shift+cmd+f",
+          "command": "search.action.openNewEditor"
       }
     ],
     "commands": [
