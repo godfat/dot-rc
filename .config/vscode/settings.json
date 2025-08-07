@@ -32,6 +32,8 @@
   },
   "search.searchOnType": false,
   "search.useIgnoreFiles": false,
+  "search.searchEditor.defaultNumberOfContextLines": null,
+  "search.searchEditor.reusePriorSearchConfiguration": true,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
   "update.mode": "start",
