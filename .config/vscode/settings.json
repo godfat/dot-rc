@@ -32,7 +32,7 @@
   },
   "search.searchOnType": false,
   "search.useIgnoreFiles": false,
-  "search.searchEditor.defaultNumberOfContextLines": null,
+  "search.searchEditor.defaultNumberOfContextLines": 0,
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
