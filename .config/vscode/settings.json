@@ -16,9 +16,9 @@
   "editor.rulers": [78],
   "editor.stickyScroll.enabled": false,
   "editor.tabCompletion": "onlySnippets",
+  "editor.tabSize": 2,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
-  "editor.tabSize": 2,
   "editor.wordWrap": "wordWrapColumn",
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn"
@@ -31,10 +31,10 @@
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
-  "search.searchOnType": false,
-  "search.useIgnoreFiles": false,
   "search.searchEditor.defaultNumberOfContextLines": 0,
   "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.searchOnType": false,
+  "search.useIgnoreFiles": false,
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
   "update.mode": "start",
