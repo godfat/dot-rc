@@ -28,7 +28,7 @@
   "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "git.openRepositoryInParentFolders": "always",
+  "git.openRepositoryInParentFolders": "never",
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
