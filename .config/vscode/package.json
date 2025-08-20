@@ -25,6 +25,12 @@
         "path": "./snippets-ruby.json"
       }
     ],
+    "languages": [
+      {
+        "id": "ruby",
+        "configuration": "./language-configuration.json"
+      }
+    ],
     "keybindings": [
       {
         "command": "twilight.compltetion.cycle",

@@ -1,0 +1,6 @@
+{
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*((begin|class|(private|protected)\\s+def|def|else|elsif|ensure|for|if|module|rescue|unless|until|when|while|case)\\b|.*\\bdo\\b|.*\\{)(?!.*\\s(end|\\})).*$",
+    "decreaseIndentPattern": "^\\s*(end|else|elsif|ensure|rescue|when)\\b|^\\s*\\}(?!\\.|\\s*[a-zA-Z_])"
+  }
+}
