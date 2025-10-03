@@ -29,6 +29,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "never",
+  "scm.diffDecorations": "gutter",
   "scm.diffDecorationsGutterPattern": {
     "modified": false
   },
