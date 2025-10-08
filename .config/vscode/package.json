@@ -33,7 +33,7 @@
     ],
     "keybindings": [
       {
-        "command": "twilight.compltetion.cycle",
+        "command": "twilight.completion.cycle",
         "key": "escape",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor && !suggestWidgetVisible"
       },
@@ -82,7 +82,7 @@
     ],
     "commands": [
       {
-        "command": "twilight.compltetion.cycle",
+        "command": "twilight.completion.cycle",
         "title": "Text complete",
         "category": "Twilight"
       },

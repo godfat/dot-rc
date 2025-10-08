@@ -5,7 +5,7 @@ const paste = require('./indent-paste');
 function activate(context) {
   context.subscriptions.push(
     vscode.commands.
-      registerCommand('twilight.compltetion.cycle', completion.activate)
+      registerCommand('twilight.completion.cycle', completion.activate)
   );
 
   context.subscriptions.push(
