@@ -47,6 +47,7 @@
   "workbench.colorTheme": "Twilight",
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.splitOnDragAndDrop": false,
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.startupEditor": "none"
 }
