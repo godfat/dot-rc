@@ -45,6 +45,7 @@
   "window.zoomPerWindow": false,
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
+  "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
   "workbench.startupEditor": "none"
