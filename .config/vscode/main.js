@@ -3,14 +3,18 @@ const completion = require('./text-completion');
 const paste = require('./indent-paste');
 
 function activate(context) {
-  context.subscriptions.push(
-    vscode.commands.
-      registerCommand('twilight.completion.cycle', completion.activate)
-  );
+  const commands = vscode.commands;
 
   context.subscriptions.push(
-    vscode.commands.
-      registerCommand('twilight.paste', paste.activate)
+    commands.registerCommand('twilight.completion.cycle', completion.activate),
+    commands.registerCommand('twilight.paste', paste.activate),
+
+    commands.registerCommand('twilight.copyRelativeFilePath', () =>
+      commands.executeCommand('copyRelativeFilePath')
+    ),
+    commands.registerCommand('twilight.copyFilePath', () =>
+      commands.executeCommand('copyFilePath')
+    )
   );
 }
 

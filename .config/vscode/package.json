@@ -90,7 +90,29 @@
         "command": "twilight.paste",
         "title": "Indent paste",
         "category": "Twilight"
+      },
+      {
+        "command": "twilight.copyRelativeFilePath",
+        "title": "Copy relative file path",
+        "category": "Twilight"
+      },
+      {
+        "command": "twilight.copyFilePath",
+        "title": "Copy absolute file path",
+        "category": "Twilight"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "twilight.copyRelativeFilePath",
+          "group": "navigation@0.01"
+        },
+        {
+          "command": "twilight.copyFilePath",
+          "group": "navigation@0.02"
+        }
+      ]
+    }
   }
 }
