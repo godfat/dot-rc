@@ -33,27 +33,31 @@
     ],
     "keybindings": [
       {
-        "command": "twilight.completion.cycle",
         "key": "escape",
+        "command": "twilight.completion.cycle",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor && !suggestWidgetVisible"
       },
       {
+        "key": "cmd+v",
         "command": "-editor.action.clipboardPasteAction",
-        "key": "cmd+v",
         "when": "editorTextFocus"
       },
       {
+        "key": "cmd+v",
         "command": "twilight.paste",
-        "key": "cmd+v",
         "when": "editorTextFocus"
       },
       {
-        "command": "workbench.action.quickOpen",
-        "key": "cmd+t"
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
       },
       {
-        "command": "workbench.action.showCommands",
-        "key": "shift+cmd+c"
+        "key": "shift+cmd+c",
+        "command": "workbench.action.showCommands"
+      },
+      {
+        "key": "shift+cmd+f",
+        "command": "search.action.openNewEditor"
       },
       {
         "key": "ctrl+left",
@@ -76,8 +80,14 @@
         "when": "textInputFocus"
       },
       {
-          "key": "shift+cmd+f",
-          "command": "search.action.openNewEditor"
+        "key": "shift+alt+up",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "shift+alt+down",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
       }
     ],
     "commands": [
