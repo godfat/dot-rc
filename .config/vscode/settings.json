@@ -41,6 +41,7 @@
   "security.workspace.trust.enabled": false,
   "telemetry.telemetryLevel": "off",
   "update.mode": "start",
+  "window.commandCenter": false,
   "window.density.editorTabHeight": "compact",
   "window.zoomLevel": 3,
   "window.zoomPerWindow": false,
@@ -50,5 +51,7 @@
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.splitOnDragAndDrop": false,
   "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
   "workbench.startupEditor": "none"
 }
