@@ -10,7 +10,6 @@ enabled:
   Textarea Cache
   uBlock Origin
   Undo Close Tab
-  UnloadTabs
   Video DownloadHelper
 
 disabled:
