@@ -11,6 +11,7 @@ enabled:
   uBlock Origin
   Undo Close Tab
   Video DownloadHelper
+  YouTube NonStop
 
 disabled:
   ColorZilla
