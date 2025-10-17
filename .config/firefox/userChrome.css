@@ -6,6 +6,7 @@ https://github.com/stonecrusher/simpleMenuWizard
 notification[value="keyword-uri-fixup"] { display: none !important; }
 
 /* Tab context menu */
+#context_moveTabToNewGroup,
 #context_openANewTab + menuseparator,
 #context_reloadTab,
 #context_toggleMuteTab,
