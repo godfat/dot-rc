@@ -19,6 +19,7 @@ notification[value="keyword-uri-fixup"] { display: none !important; }
 #context_openTabInWindow,
 #context_sendTabToDevice,
 #context_reopenInContainer,
+#context_closeDuplicateTabs,
 #context_closeTabOptions,
 #context_closeTabsToTheEnd,
 #context_closeOtherTabs,
