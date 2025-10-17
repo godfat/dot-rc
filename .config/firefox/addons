@@ -4,9 +4,9 @@ enabled:
   DF YouTube (Distraction Free)
   Firefox Multi-Account Containers
   Google search link fix
-  HTTP/2 Indicator
-  New Tab Context
-  New Tong Wen Tang
+  HTTP Version Indicator
+  New TongWenTang
+  Select After Closing Current
   Textarea Cache
   uBlock Origin
   Undo Close Tab
@@ -19,3 +19,4 @@ disabled:
   Export Tabs URLs
   Font Finder
   Greasemonkey
+  NoScript
