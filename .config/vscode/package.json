@@ -48,6 +48,11 @@
         "when": "editorTextFocus"
       },
       {
+        "key": "shift+3",
+        "command": "twilight.stringInterpolation",
+        "when": "editorTextFocus && editorLangId == ruby"
+      },
+      {
         "key": "cmd+t",
         "command": "workbench.action.quickOpen"
       },
@@ -99,6 +104,12 @@
       {
         "command": "twilight.paste",
         "title": "Indent paste",
+        "category": "Twilight"
+      },
+      {
+        "command": "twilight.stringInterpolation",
+        "title": "Wrap #{} or insert #",
+        "when": "editorTextFocus && editorLangId == ruby",
         "category": "Twilight"
       },
       {
