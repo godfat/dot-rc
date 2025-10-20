@@ -1,6 +1,6 @@
 {
   "indentationRules": {
-    "increaseIndentPattern": "^\\s*((begin|case|class|(private|protected)\\s+def|def|else|elsif|ensure|for|if|module|rescue|unless|until|when|while)\\b(?!.*\\bend\\b)|[^#]*\\bdo\\b|[^#]*\\{(?!.*\\})).*$",
+    "increaseIndentPattern": "^\\s*((begin|case|class|(private|protected)\\s+def|def|else|elsif|ensure|for|if|module|rescue|unless|until|when|while)\\b(?!.*\\bend\\b)|([^#]|#\\{)*\\bdo\\b|([^#]|#\\{)*\\{(?!.*\\})).*$",
     "decreaseIndentPattern": "^\\s*(end|else|elsif|ensure|rescue|when)\\b|^\\s*}"
   }
 }
