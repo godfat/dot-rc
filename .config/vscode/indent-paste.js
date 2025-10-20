@@ -1,15 +1,11 @@
 const vscode = require('vscode');
 
-async function activate() {
+async function execute() {
   const editor = vscode.window.activeTextEditor;
-  if (!editor) {
-    return;
-  }
+  if (!editor) return;
 
   const clipboardText = await vscode.env.clipboard.readText();
-  if (!clipboardText) {
-    return;
-  }
+  if (!clipboardText) return;
 
   const document = editor.document;
   let selection = editor.selection;
@@ -44,7 +40,8 @@ async function activate() {
   const lines = clipboardText.split(/\r?\n/);
 
   // Find base indentation info
-  const { baseIndent, firstNonEmptyIndex, firstLineHasIndent } = findBaseIndentation(lines);
+  const { baseIndent, firstNonEmptyIndex, firstLineHasIndent } =
+    findBaseIndentation(lines);
 
   // Adjust each line
   const adjustedLines = lines.map((line, index) =>
@@ -160,4 +157,4 @@ function adjustLineIndentation(line, lineIndex, baseIndent, targetIndent, firstN
   return targetIndent + line.trimStart();
 }
 
-module.exports = { activate };
+module.exports = { execute };

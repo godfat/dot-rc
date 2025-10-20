@@ -34,7 +34,7 @@
     "keybindings": [
       {
         "key": "escape",
-        "command": "twilight.completion.cycle",
+        "command": "twilight.textCompletion",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor && !suggestWidgetVisible"
       },
       {
@@ -44,7 +44,7 @@
       },
       {
         "key": "cmd+v",
-        "command": "twilight.paste",
+        "command": "twilight.indentPaste",
         "when": "editorTextFocus"
       },
       {
@@ -97,12 +97,12 @@
     ],
     "commands": [
       {
-        "command": "twilight.completion.cycle",
+        "command": "twilight.textCompletion",
         "title": "Text complete",
         "category": "Twilight"
       },
       {
-        "command": "twilight.paste",
+        "command": "twilight.indentPaste",
         "title": "Indent paste",
         "category": "Twilight"
       },

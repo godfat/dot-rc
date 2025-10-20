@@ -6,11 +6,9 @@ let selectionListener = null;
 let isInCyclingMode = false;
 let originalState = null;
 
-function activate() {
+async function execute() {
   const editor = vscode.window.activeTextEditor;
-  if (!editor) {
-    return;
-  }
+  if (!editor) return;
 
   if (!isInCyclingMode) {
     startCycling(editor);
@@ -21,14 +19,10 @@ function activate() {
 
 function startCycling(editor) {
   const currentWordRange = getCurrentWordRange(editor);
-  if (!currentWordRange) {
-    return;
-  }
+  if (!currentWordRange) return;
 
   const currentWord = editor.document.getText(currentWordRange);
-  if (!currentWord) {
-    return;
-  }
+  if (!currentWord) return;
 
   // Store original state
   originalState = {
@@ -38,9 +32,7 @@ function startCycling(editor) {
 
   // Get suggestions
   suggestions = getWordSuggestions(editor, currentWord);
-  if (suggestions.length === 0) {
-    return;
-  }
+  if (suggestions.length === 0) return;
 
   isInCyclingMode = true;
   currentSuggestionIndex = 0;
@@ -55,9 +47,7 @@ function startCycling(editor) {
 }
 
 function cycleToNext(editor) {
-  if (!isInCyclingMode || suggestions.length === 0) {
-    return;
-  }
+  if (!isInCyclingMode || suggestions.length === 0) return;
 
   currentSuggestionIndex = (currentSuggestionIndex + 1) % suggestions.length;
   applySuggestion(editor, suggestions[currentSuggestionIndex]);
@@ -65,9 +55,7 @@ function cycleToNext(editor) {
 
 function applySuggestion(editor, suggestionWord) {
   const currentWordRange = getCurrentWordRange(editor);
-  if (!currentWordRange) {
-    return;
-  }
+  if (!currentWordRange) return;
 
   // Temporarily disable the selection listener during our edit
   const wasListening = selectionListener !== null;
@@ -196,7 +184,4 @@ function deactivate() {
   commitCycling();
 }
 
-module.exports = {
-  activate,
-  deactivate
-};
+module.exports = { execute, deactivate };
