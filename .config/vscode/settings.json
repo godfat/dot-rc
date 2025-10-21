@@ -48,6 +48,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Twilight",
   "workbench.editor.closeEmptyGroups": false,
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.splitOnDragAndDrop": false,
   "workbench.editor.tabActionCloseVisibility": false,
