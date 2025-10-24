@@ -4,6 +4,7 @@ enabled:
   DF YouTube (Distraction Free)
   Firefox Multi-Account Containers
   Google search link fix
+  Greasemonkey
   HTTP Version Indicator
   New TongWenTang
   Select After Closing Current
@@ -19,5 +20,4 @@ disabled:
   Download All Images
   Export Tabs URLs
   Font Finder
-  Greasemonkey
   NoScript
