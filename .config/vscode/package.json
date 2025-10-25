@@ -22,13 +22,13 @@
     "snippets": [
       {
         "language": "ruby",
-        "path": "./snippets-ruby.json"
+        "path": "./ruby/snippets.json"
       }
     ],
     "languages": [
       {
         "id": "ruby",
-        "configuration": "./language-configuration.json"
+        "configuration": "./ruby/configuration.json"
       }
     ],
     "keybindings": [
