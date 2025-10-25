@@ -14,7 +14,7 @@
   "class": {
     "prefix": "class",
     "body": "class ${1:ClassName}\n\t$0\nend",
-    "description": "class .. end",
+    "description": "class … end",
     "scope": "source.ruby"
   },
   "def": {
@@ -25,8 +25,8 @@
   },
   "defi": {
     "prefix": "defi",
-    "body": "def initialize${1:(${2:argument})}\n\t@${2:argument} = ${2:argument}$0\nend",
-    "description": "def initialize .. end",
+    "body": "def initialize${1:}\n\t$0\nend",
+    "description": "def initialize … end",
     "scope": "source.ruby"
   },
   "do": {
@@ -47,40 +47,34 @@
     "description": "if … end",
     "scope": "source.ruby"
   },
-  "ife": {
-    "prefix": "ife",
-    "body": "if ${1:condition}\n\t$2\nelse\n\t$3\nend",
-    "description": "if … else … end",
-    "scope": "source.ruby"
-  },
   "map": {
     "prefix": "map",
-    "body": "map { |${1:e}| $0 }",
-    "description": "map { |e| .. }",
+    "body": "map do |${1:}|\n\t$0\nend",
+    "description": "map … end",
     "scope": "source.ruby"
   },
   "module": {
     "prefix": "module",
     "body": "module ${1:ModuleName}\n\t$0\nend",
-    "description": "module .. end",
+    "description": "module … end",
     "scope": "source.ruby"
   },
-  "r": {
-    "prefix": "r",
+  "attrr": {
+    "prefix": "attrr",
     "body": "attr_reader :${0:attr_names}",
-    "description": "attr_reader ..",
+    "description": "attr_reader …",
     "scope": "source.ruby"
   },
   "req": {
     "prefix": "req",
     "body": "require '$0'",
-    "description": "require '..'",
+    "description": "require '…'",
     "scope": "source.ruby"
   },
-  "rw": {
-    "prefix": "rw",
+  "attra": {
+    "prefix": "attra",
     "body": "attr_accessor :${0:attr_names}",
-    "description": "attr_accessor ..",
+    "description": "attr_accessor …",
     "scope": "source.ruby"
   },
   "unless": {
@@ -92,19 +86,19 @@
   "until": {
     "prefix": "until",
     "body": "until ${1:condition}\n\t$0\nend",
-    "description": "until ... end",
+    "description": "until … end",
     "scope": "source.ruby"
   },
-  "w": {
-    "prefix": "w",
+  "attrw": {
+    "prefix": "attrw",
     "body": "attr_writer :${0:attr_names}",
-    "description": "attr_writer ..",
+    "description": "attr_writer …",
     "scope": "source.ruby"
   },
   "while": {
     "prefix": "while",
     "body": "while ${1:condition}\n\t$0\nend",
-    "description": "while ... end",
+    "description": "while … end",
     "scope": "source.ruby"
   }
 }
