@@ -1,18 +1,18 @@
 {
-  "attra": {
-    "prefix": "attra",
+  "ata": {
+    "prefix": "ata",
     "body": "attr_accessor :${0:attr_names}",
     "description": "attr_accessor …",
     "scope": "source.ruby"
   },
-  "attrr": {
-    "prefix": "attrr",
+  "atr": {
+    "prefix": "atr",
     "body": "attr_reader :${0:attr_names}",
     "description": "attr_reader …",
     "scope": "source.ruby"
   },
-  "attrw": {
-    "prefix": "attrw",
+  "atw": {
+    "prefix": "atw",
     "body": "attr_writer :${0:attr_names}",
     "description": "attr_writer …",
     "scope": "source.ruby"
@@ -29,8 +29,8 @@
     "description": "case … end",
     "scope": "source.ruby"
   },
-  "class": {
-    "prefix": "class",
+  "cla": {
+    "prefix": "cla",
     "body": "class ${1:ClassName}\n\t$0\nend",
     "description": "class … end",
     "scope": "source.ruby"
@@ -71,8 +71,8 @@
     "description": "map … end",
     "scope": "source.ruby"
   },
-  "module": {
-    "prefix": "module",
+  "mod": {
+    "prefix": "mod",
     "body": "module ${1:ModuleName}\n\t$0\nend",
     "description": "module … end",
     "scope": "source.ruby"
