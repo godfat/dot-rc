@@ -1,4 +1,22 @@
 {
+  "attra": {
+    "prefix": "attra",
+    "body": "attr_accessor :${0:attr_names}",
+    "description": "attr_accessor …",
+    "scope": "source.ruby"
+  },
+  "attrr": {
+    "prefix": "attrr",
+    "body": "attr_reader :${0:attr_names}",
+    "description": "attr_reader …",
+    "scope": "source.ruby"
+  },
+  "attrw": {
+    "prefix": "attrw",
+    "body": "attr_writer :${0:attr_names}",
+    "description": "attr_writer …",
+    "scope": "source.ruby"
+  },
   "begin": {
     "prefix": "begin",
     "body": "begin\n\t$1\nrescue ${2:ExceptionName}\n\t$3\nend",
@@ -59,28 +77,10 @@
     "description": "module … end",
     "scope": "source.ruby"
   },
-  "attrr": {
-    "prefix": "attrr",
-    "body": "attr_reader :${0:attr_names}",
-    "description": "attr_reader …",
-    "scope": "source.ruby"
-  },
   "req": {
     "prefix": "req",
     "body": "require '$0'",
     "description": "require '…'",
-    "scope": "source.ruby"
-  },
-  "attra": {
-    "prefix": "attra",
-    "body": "attr_accessor :${0:attr_names}",
-    "description": "attr_accessor …",
-    "scope": "source.ruby"
-  },
-  "attrw": {
-    "prefix": "attrw",
-    "body": "attr_writer :${0:attr_names}",
-    "description": "attr_writer …",
     "scope": "source.ruby"
   }
 }
