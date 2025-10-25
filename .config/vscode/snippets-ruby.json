@@ -17,15 +17,9 @@
     "description": "attr_writer …",
     "scope": "source.ruby"
   },
-  "begin": {
-    "prefix": "begin",
-    "body": "begin\n\t$1\nrescue ${2:ExceptionName}\n\t$3\nend",
-    "description": "begin … rescue … end",
-    "scope": "source.ruby"
-  },
-  "case": {
-    "prefix": "case",
-    "body": "case ${1:object}\nwhen ${2:condition}\n\t$0\nend",
+  "cas": {
+    "prefix": "cas",
+    "body": "case ${1:expression}\nwhen ${2:condition}\n\t$0\nend",
     "description": "case … end",
     "scope": "source.ruby"
   },
@@ -49,20 +43,20 @@
   },
   "do": {
     "prefix": "do",
-    "body": "do\n\t$0\nend",
+    "body": "do |${1:}|\n\t$0\nend",
     "description": "Insert do … end",
-    "scope": "source.ruby"
-  },
-  "elsif": {
-    "prefix": "elsif",
-    "body": "elsif ${1:condition}\n\t$0",
-    "description": "elsif ...",
     "scope": "source.ruby"
   },
   "if": {
     "prefix": "if",
     "body": "if ${1:condition}\n\t$0\nend",
     "description": "if … end",
+    "scope": "source.ruby"
+  },
+  "inj": {
+    "prefix": "inj",
+    "body": "inject(${1:}) do |result, ${2:element}|\n\t$0\nend",
+    "description": "inject … end",
     "scope": "source.ruby"
   },
   "map": {
