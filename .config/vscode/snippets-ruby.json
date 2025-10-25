@@ -77,28 +77,10 @@
     "description": "attr_accessor …",
     "scope": "source.ruby"
   },
-  "unless": {
-    "prefix": "unless",
-    "body": "unless ${1:condition}\n\t$0\nend",
-    "description": "unless … end",
-    "scope": "source.ruby"
-  },
-  "until": {
-    "prefix": "until",
-    "body": "until ${1:condition}\n\t$0\nend",
-    "description": "until … end",
-    "scope": "source.ruby"
-  },
   "attrw": {
     "prefix": "attrw",
     "body": "attr_writer :${0:attr_names}",
     "description": "attr_writer …",
-    "scope": "source.ruby"
-  },
-  "while": {
-    "prefix": "while",
-    "body": "while ${1:condition}\n\t$0\nend",
-    "description": "while … end",
     "scope": "source.ruby"
   }
 }
