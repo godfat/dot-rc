@@ -34,7 +34,7 @@
     "keybindings": [
       {
         "key": "escape",
-        "command": "twilight.textCompletion",
+        "command": "twilight.textComplete",
         "when": "editorTextFocus && !editorHasMultipleSelections && !inDiffEditor && !suggestWidgetVisible"
       },
       {
@@ -49,7 +49,7 @@
       },
       {
         "key": "shift+3",
-        "command": "twilight.stringInterpolation",
+        "command": "twilight.stringInterpolate",
         "when": "editorTextFocus && editorLangId == ruby"
       },
       {
@@ -97,7 +97,7 @@
     ],
     "commands": [
       {
-        "command": "twilight.textCompletion",
+        "command": "twilight.textComplete",
         "title": "Text complete",
         "category": "Twilight"
       },
@@ -107,7 +107,7 @@
         "category": "Twilight"
       },
       {
-        "command": "twilight.stringInterpolation",
+        "command": "twilight.stringInterpolate",
         "title": "Wrap #{} or insert #",
         "when": "editorTextFocus && editorLangId == ruby",
         "category": "Twilight"

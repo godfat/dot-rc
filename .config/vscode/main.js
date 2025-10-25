@@ -1,18 +1,18 @@
 const vscode = require('vscode');
-const textCompletion = require('./text-completion');
-const indentPaste = require('./indent-paste');
-const stringInterpolation = require('./string-interpolation');
+const textComplete = require('./command/text-complete');
+const indentPaste = require('./command/indent-paste');
+const stringInterpolate = require('./command/string-interpolate');
 
 function activate(context) {
   const commands = vscode.commands;
 
   context.subscriptions.push(
     commands.registerCommand(
-      'twilight.textCompletion', textCompletion.execute),
+      'twilight.textComplete', textComplete.execute),
     commands.registerCommand(
       'twilight.indentPaste', indentPaste.execute),
     commands.registerCommand(
-      'twilight.stringInterpolation', stringInterpolation.execute),
+      'twilight.stringInterpolate', stringInterpolate.execute),
 
     commands.registerCommand('twilight.copyRelativeFilePath', () =>
       commands.executeCommand('copyRelativeFilePath')
@@ -24,7 +24,7 @@ function activate(context) {
 }
 
 function deactivate() {
-  completion.deactivate();
+  textComplete.deactivate();
 }
 
 module.exports = {
