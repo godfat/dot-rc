@@ -1,6 +1,7 @@
 {
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
+  "editor.find.seedSearchStringFromSelection": "never",
   "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, monospace",
   "editor.hideCursorInOverviewRuler": true,
   "editor.hover.enabled": false,
