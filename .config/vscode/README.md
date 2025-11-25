@@ -7,21 +7,17 @@
 
 ## Commands
 
+Mostly written by Claude Opus 4 and guided by me.
+
 * `command/text-complete.js`
-  * Improved and rewritten by Claude guided by me based on
-    <https://github.com/getogrand/another-word-completion/commit/691badc8894e821258cfe0bbab1df0aaeb89e5fe>
-  * No longer uses any dependencies.
-  * No longer pollutes the undo history with cycling by the concept of
-    committing when user moves the cursor.
+  * Text complete by cycling through candidates sorted by line distance
+  * One single undo for each completion
+  * Commit the completion when the user moves the cursor
 * `command/indent-paste.js`
-  * Written by Claude Opus 4 with a lot of back and forth with my tests and
-    requests.
   * The main idea is to paste snippets with correct indentation, at the same
     time with a single undo point. Paste on format doesn't work for all
     languages, and it creates 2 undo points.
 * `command/string-interpolate.js`
-  * Written by Claude Opus 4 with a lot of back and forth with my tests and
-    requests.
 
 ## Ruby specific settings
 
