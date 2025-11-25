@@ -140,44 +140,36 @@ function getCurrentWordRange(textEditor) {
 function getWordSuggestions(textEditor, currentWord) {
   const document = textEditor.document;
   const currentPosition = textEditor.selection.active;
-  const wordSet = new Set();
-  const suggestions = [];
+  const wordDistances = new Map(); // word -> minimum distance
 
-  // Get all text from document
   const text = document.getText();
-
-  // Simple word extraction regex - matches word characters
   const wordRegex = /\b\w+\b/g;
   let match;
 
   while ((match = wordRegex.exec(text)) !== null) {
     const word = match[0];
 
-    // Skip if same as current word or doesn't start with current word
     if (word === currentWord || !word.startsWith(currentWord)) {
       continue;
     }
 
-    // Skip if already found
-    if (wordSet.has(word)) {
-      continue;
-    }
-
-    wordSet.add(word);
-
-    // Calculate distance from current position
     const matchPosition = document.positionAt(match.index);
-    const distance = Math.abs(matchPosition.line - currentPosition.line) +
-      Math.abs(matchPosition.character - currentPosition.character);
 
-    suggestions.push({ word, distance });
+    // Words on nearby lines are much more relevant than distant ones
+    const lineDiff = Math.abs(matchPosition.line - currentPosition.line);
+    const distance = lineDiff * 2 + (matchPosition.line < currentPosition.line ? 0 : 1);
+
+    // Keep the closest occurrence of each word
+    const existing = wordDistances.get(word);
+    if (existing === undefined || distance < existing) {
+      wordDistances.set(word, distance);
+    }
   }
 
-  // Sort by distance (closest first)
-  suggestions.sort((a, b) => a.distance - b.distance);
-
-  // Return just the words
-  return suggestions.map(s => s.word);
+  // Sort by distance and return words
+  return Array.from(wordDistances.entries()).
+    sort((a, b) => a[1] - b[1]).
+    map(([word]) => word);
 }
 
 function deactivate() {
