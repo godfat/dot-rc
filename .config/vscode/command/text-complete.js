@@ -93,8 +93,6 @@ function commitCycling() {
 }
 
 function getCurrentWordRange(textEditor) {
-  const position = textEditor.selection.active;
-
   // If we're in cycling mode, use the original range as reference
   if (isInCyclingMode && originalState) {
     const line = textEditor.document.lineAt(originalState.range.start.line);
@@ -115,11 +113,10 @@ function getCurrentWordRange(textEditor) {
     );
   }
 
+  const position = textEditor.selection.active;
   const wordRange = textEditor.document.getWordRangeAtPosition(position);
 
-  if (wordRange) {
-    return wordRange;
-  }
+  if (wordRange) return wordRange;
 
   // If no word at position, try to get partial word before cursor
   const lineText = textEditor.document.lineAt(position.line).text;
@@ -132,9 +129,9 @@ function getCurrentWordRange(textEditor) {
     const start = new vscode.Position(position.line, startChar);
     const end = position;
     return new vscode.Range(start, end);
+  } else {
+    return null;
   }
-
-  return null;
 }
 
 function getWordSuggestions(textEditor, currentWord) {
