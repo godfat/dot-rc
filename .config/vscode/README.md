@@ -1,3 +1,7 @@
+# Twilight
+
+Mostly written by Claude Opus 4 and guided by me.
+
 ## Theme
 
 * `twilight.json`
@@ -5,29 +9,25 @@
     <https://github.com/godfat/dot-rc/blob/e65145370b561eaa1e4fe9b4a67d159a94e413f9/.config/subl/Twilight.tmTheme>
   * Tweaked manually
 
-## Commands
+## Text
 
-Mostly written by Claude Opus 4 and guided by me.
-
-* `command/text-complete.js`
+* `text/text-complete.js`
   * Text complete by cycling through candidates sorted by line distance
   * One single undo for each completion
   * Commit the completion when the user moves the cursor
-* `command/indent-paste.js`
+* `text/indent-paste.js`
   * The main idea is to paste snippets with correct indentation, at the same
     time with a single undo point. Paste on format doesn't work for all
-    languages, and it creates 2 undo points.
-* `command/string-interpolate.js`
+    languages, and it creates 2 undo points
 
-## Ruby specific settings
+## Ruby
 
+* `ruby/string-interpolate.js`
+  * When typing `#` inside a string which can use string interpolation,
+    insert snippet `#{}`
+  * When typing `#` with a selection, wrap it with `#{}`
 * `ruby/configuration.json`
-  * Written by Claude Opus 4 with a lot of back and forth with my tests and
-    requests.
-  * Tweaked manually
 * `ruby/snippets.json`
-  * Imported from <https://github.com/magicwhite/ruby-snippet/blob/537157ef3a1c5b9c6f74b0e2d4d545371a6d549d/snippets/snippets.json>
-  * Tweaked manually
 
 ## Other extensions
 
