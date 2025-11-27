@@ -31,5 +31,5 @@ Mostly written by Claude Opus 4 and guided by me.
 
 ## Other extensions
 
-* Use [Ruby Language Colorization](https://marketplace.visualstudio.com/items?itemName=groksrc.ruby) to recognize support (built-in) methods ands keywords.
+* Use [erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb) to recognize ERB.
 * Use [NGINX Configuration Language Support](https://marketplace.visualstudio.com/items?itemName=ahmadalli.vscode-nginx-conf) to recognize Nginx config.
