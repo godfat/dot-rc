@@ -1,7 +1,7 @@
 const vscode = require('vscode');
-const textComplete = require('./command/text-complete');
-const indentPaste = require('./command/indent-paste');
-const stringInterpolate = require('./command/string-interpolate');
+const textComplete = require('./text/text-complete');
+const indentPaste = require('./text/indent-paste');
+const stringInterpolate = require('./ruby/string-interpolate');
 
 function activate(context) {
   const commands = vscode.commands;
