@@ -29,10 +29,6 @@
       {
         "id": "ruby",
         "configuration": "./ruby/configuration.json"
-      },
-      {
-        "id": "html",
-        "extensions": [".erb"]
       }
     ],
     "keybindings": [
