@@ -2,6 +2,7 @@ const vscode = require('vscode');
 const textComplete = require('./text/text-complete');
 const indentPaste = require('./text/indent-paste');
 const stringInterpolate = require('./ruby/string-interpolate');
+const tagComplete = require('./html/tag-complete')
 
 function activate(context) {
   const commands = vscode.commands;
@@ -13,6 +14,8 @@ function activate(context) {
       'twilight.indentPaste', indentPaste.execute),
     commands.registerCommand(
       'twilight.stringInterpolate', stringInterpolate.execute),
+    commands.registerCommand(
+      'twilight.tagComplete', tagComplete.execute),
 
     commands.registerCommand('twilight.copyRelativeFilePath', () =>
       commands.executeCommand('copyRelativeFilePath')

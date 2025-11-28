@@ -29,6 +29,11 @@ Mostly written by Claude Opus 4 and guided by me.
 * `ruby/configuration.json`
 * `ruby/snippets.json`
 
+## HTML
+
+* `html/tag-complete.js`
+  * When typing `</`, complete the previous open tag
+
 ## Other extensions
 
 * Use [erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb) to recognize ERB.

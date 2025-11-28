@@ -53,6 +53,11 @@
         "when": "editorTextFocus && editorLangId == ruby"
       },
       {
+        "key": "/",
+        "command": "twilight.tagComplete",
+        "when": "editorTextFocus && editorLangId == erb"
+      },
+      {
         "key": "cmd+t",
         "command": "workbench.action.quickOpen"
       },
@@ -111,6 +116,11 @@
         "title": "Wrap #{} or insert #",
         "when": "editorTextFocus && editorLangId == ruby",
         "category": "Twilight"
+      },
+      {
+        "command": "twilight.tagComplete",
+        "when": "editorTextFocus && editorLangId == erb",
+        "title": "Complete HTML Tag or insert /"
       },
       {
         "command": "twilight.copyRelativeFilePath",
