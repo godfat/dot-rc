@@ -7,13 +7,10 @@ notification[value="keyword-uri-fixup"] { display: none !important; }
 
 /* Tab context menu */
 #context_moveTabToNewGroup,
-#context_openANewTab + menuseparator,
 #context_reloadTab,
 #context_toggleMuteTab,
-#context_duplicateTabs + menuseparator,
 #context_shareTabURL,
 #context_selectAllTabs,
-#context_selectAllTabs + menuseparator,
 #context_bookmarkTab,
 #context_moveTabOptions,
 #context_openTabInWindow,
@@ -46,14 +43,16 @@ notification[value="keyword-uri-fixup"] { display: none !important; }
   visibility: collapse !important;
 }
 
-#context_openANewTab { -moz-box-ordinal-group: 0 }
-#context_duplicateTab { -moz-box-ordinal-group: 1 }
-#context_pinTab { -moz-box-ordinal-group: 2 }
-#context_unpinTab { -moz-box-ordinal-group: 3 }
-#context_undoCloseTab { -moz-box-ordinal-group: 4 }
-menu[label="Undo Close Tab"] { -moz-box-ordinal-group: 5 }
-menuitem[label="Unload Tab"] { -moz-box-ordinal-group: 6 }
-#context_closeTab { -moz-box-ordinal-group: 7 }
+#tabContextMenu menuseparator { display: none !important; }
+
+#context_openANewTab { order: 0 }
+#context_duplicateTab { order: 1 }
+#context_pinTab { order: 2 }
+#context_unpinTab { order: 3 }
+menuitem[label="Unload Tab"] { order: 4 }
+#context_closeTab { order: 5 }
+#context_undoCloseTab { order: 6 }
+menu[label="Undo Close Tab"] { order: 7 }
 
 .tabbrowser-tab[pending="true"] {
   background-color: gray !important;
