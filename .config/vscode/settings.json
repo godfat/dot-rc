@@ -42,6 +42,7 @@
   "search.searchOnType": false,
   "search.useIgnoreFiles": false,
   "security.workspace.trust.enabled": false,
+  "task.allowAutomaticTasks": "off",
   "telemetry.telemetryLevel": "off",
   "update.mode": "start",
   "window.commandCenter": false,
