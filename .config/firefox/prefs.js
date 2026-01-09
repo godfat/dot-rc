@@ -20,6 +20,7 @@ user_pref("browser.tabs.groups.smart.enabled", false);
 user_pref("browser.tabs.groups.smart.userEnabled", false);
 user_pref("browser.tabs.hoverPreview.enabled", false);
 user_pref("browser.tabs.insertAfterCurrent", true);
+user_pref("browser.taskbarTabs.enabled", false);
 user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
 user_pref("browser.urlbar.scotchBonnet.enableOverride", false);
