@@ -1,5 +1,5 @@
 ! Sep 14, 2024 https://discord.com
-discord.com##[class^="hoverBarButton_"][aria-label^="Click to"]
+discord.com##[class*="hoverBarButton"][aria-label^="Click to"]
 
 ! May 26, 2025 https://discord.com
-discord.com##[class*="sansAttachButton_"] [class^="buttons_"]
+discord.com##[class$="button"][aria-label^="Add Reaction:"]
