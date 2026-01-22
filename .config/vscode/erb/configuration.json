@@ -1,0 +1,11 @@
+{
+  "onEnterRules": [
+    {
+      "beforeText": "<(\\w+)>",
+      "afterText": "<\\/\\w+>",
+      "action": {
+        "indent": "indentOutdent"
+      }
+    }
+  ]
+}
