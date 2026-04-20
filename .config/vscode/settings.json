@@ -5,7 +5,7 @@
   "editor.find.seedSearchStringFromSelection": "never",
   "editor.fontFamily": "'DejaVu Sans Mono', Menlo, Monaco, 'Noto Emoji', monospace",
   "editor.hideCursorInOverviewRuler": true,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "off",
   "editor.inlineSuggest.enabled": false,
   "editor.lightbulb.enabled": "off",
   "editor.minimap.enabled": false,
