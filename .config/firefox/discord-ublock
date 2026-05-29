@@ -1,3 +1,9 @@
+! May 29, 2026 https://discord.com
+discord.com##[aria-label^="Send a gift"]
+discord.com##[aria-label^="Open GIF picker"]
+discord.com##[aria-label^="Open sticker picker"]
+discord.com##[aria-label^="Apps"]
+
 ! Sep 14, 2024 https://discord.com
 discord.com##[class*="hoverBarButton"][aria-label^="Click to"]
 
