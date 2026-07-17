@@ -1,11 +1,13 @@
 {
   "onEnterRules": [
     {
-      "beforeText": "<(\\w+)>",
-      "afterText": "<\\/\\w+>",
-      "action": {
-        "indent": "indentOutdent"
-      }
+      "beforeText": "<(\\w+)>$",
+      "afterText": "^<\\/\\w+>$",
+      "action": { "indent": "indentOutdent" }
+    },
+    {
+      "beforeText": "<(\\w+)>(?:(?!<\\/\\1>).)*$",
+      "action": { "indent": "indent" }
     }
   ]
 }
