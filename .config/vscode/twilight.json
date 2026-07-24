@@ -42,6 +42,7 @@
     "tab.activeForeground": "#F8F8F8",
     "tab.inactiveBackground": "#0F0F0F",
     "tab.inactiveForeground": "#5F5A60",
+    "tab.activeBorderTop": "#00000000",
     "tab.border": "#2A2A2A",
     "panel.background": "#141414",
     "panel.border": "#2A2A2A",
