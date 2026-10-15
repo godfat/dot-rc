@@ -26,6 +26,7 @@ user_pref("browser.ml.chat.page.menuBadge", false);
 user_pref("browser.ml.chat.shortcuts", false);
 user_pref("browser.ml.chat.sidebar", false);
 user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.nova.enabled", false);
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.tabs.groups.smart.enabled", false);
