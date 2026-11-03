@@ -30,10 +30,12 @@
     "editor.wordWrap": "wordWrapColumn"
   },
   "editor.wrappingIndent": "none",
+  "extensions.autoUpdate": "off",
   "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.openRepositoryInParentFolders": "never",
+  "html.autoClosingTags": false,
   "scm.diffDecorations": "gutter",
   "scm.diffDecorationsGutterPattern": {
     "modified": false
