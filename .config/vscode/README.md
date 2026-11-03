@@ -1,6 +1,6 @@
 # Twilight
 
-Mostly written by Claude Opus 4 and guided by me.
+Parts are assisted by Claude.
 
 ## Theme
 
