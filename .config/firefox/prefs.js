@@ -50,7 +50,6 @@ user_pref("general.smoothScroll", false);
 user_pref("general.smoothScroll.mouseWheel", false);
 user_pref("layout.word_select.eat_space_to_next_word", false);
 user_pref("mousewheel.acceleration.factor", 0);
-user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.socialtracking.enabled", true);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
