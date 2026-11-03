@@ -32,9 +32,20 @@
       },
       {
         "id": "erb",
+        "aliases": ["HTML (ERB)"],
+        "extensions": [".erb"],
         "configuration": "./erb/configuration.json"
       }
     ],
+    "grammars": [{
+      "language": "erb",
+      "scopeName": "text.html.erb",
+      "embeddedLanguages": {
+        "source.ruby.embedded.erb": "ruby",
+        "text.html": "html"
+      },
+      "path": "./erb/grammar.json"
+    }],
     "keybindings": [
       {
         "key": "escape",

@@ -29,11 +29,14 @@ Parts are assisted by Claude.
 * `ruby/configuration.json`
 * `ruby/snippets.json`
 
+## ERB (For HTML)
+
+* `erb/configuration.json`
+  * Indentation for ERB tags
+* `erb/grammar.json`
+  * Defines HTML with ERB
+
 ## HTML
 
 * `html/tag-complete.js`
   * When typing `</`, complete the previous open tag
-
-## Other extensions
-
-* Use [erb](https://marketplace.visualstudio.com/items?itemName=CraigMaslowski.erb) to recognize ERB.
